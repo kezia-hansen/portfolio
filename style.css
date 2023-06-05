@@ -48,18 +48,19 @@ h3 {
 }
 
 .hero-text h1 {
-    font-size: 36px;
+    font-size: 3rem;
     position: relative;
-    left: 47px;
-    top: 67px;
+    left: -1px;
+    top: -11px;
 }
 
 .hero-text h3 {
-    font-size: 36px;
-    position: relative;
-    left: 55px;
-    top: 43px;
+    font-size: 0.8rem;
+    position: absolute;
+    left: 30px;
+    top: 64px;
 }
+
 
 
 /* Om Alive - paragraf og billeder */
