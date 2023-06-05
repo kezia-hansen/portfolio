@@ -63,7 +63,7 @@ h3 {
 
 
 
-/* Om Alive - paragraf og billeder */
+/* Section - 1 */
 
 .image-container {
     display: flex;
@@ -102,6 +102,15 @@ h3 {
     position: relative;
     top: -141px;
     left: 56px;
+}
+
+.playliste_img {
+    display: block;
+    width: 50%;
+    height: auto;
+    position: relative;
+    top: -130px;
+    left: 24%;
 }
 
 /* Om forening */
