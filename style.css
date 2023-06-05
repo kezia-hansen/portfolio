@@ -44,7 +44,7 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #f8f2b1;
+    color: #FEE1BB;
 }
 
 .hero-text h1 {
@@ -64,34 +64,44 @@ h3 {
 
 
 /* Om Alive - paragraf og billeder */
-.om_alive_text {
-    padding: 50px 20px;
-    margin-top: 132px;
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60%;
 }
 
-.om_alive_text h2 {
-    text-align: center;
-}
-
-.om_alive_text p {
-    margin-bottom: 20px;
-}
-
-.om_alive_img {
+.portaet_img {
     display: block;
-    max-width: 100%;
+    width: 50%;
     height: auto;
-    border-radius: 25px;
-    margin-bottom: 20px;
 }
 
-.figur23 {
-    width: 68%;
-    top: 54%;
-    left: 11%;
-    z-index: -1;
-    position: absolute;
-    height: 220%;
+.content-container h3 {
+    text-align: center;
+    color: #FEE1BB;
+    font-size: 3.5rem;
+    position: relative;
+    top: -53px;
+    left: 0;
+}
+
+.bar {
+    width: 24%;
+    height: 4px;
+    background-color: #FEE1BB;
+    position: relative;
+    top: -117px;
+    left: 25%;
+}
+
+.content-container h4 {
+    text-align: center;
+    color: #FEE1BB;
+    font-size: 0.7rem;
+    position: relative;
+    top: -141px;
+    left: 56px;
 }
 
 /* Om forening */
@@ -121,7 +131,7 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
-    background-color: #f8f2b1;
+    background-color: #FEE1BB;
     color: black;
     border: none;
     border-radius: 5px;
@@ -146,7 +156,7 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f8f2b1;
+    background-color: #FEE1BB;
     padding: 20px;
     text-align: center;
     width: 70%;
@@ -244,7 +254,7 @@ h3 {
     font-size: 30px;
     transition: 0.6s ease;
     user-select: none;
-    background-color: #f8f2b1b0;
+    background-color: #FEE1BBb0;
     border-radius: 75%;
 }
 
@@ -355,7 +365,7 @@ h3 {
         top: 50%;
         left: 50%;
         text-align: center;
-        color: #f8f2b1;
+        color: #FEE1BB;
         font-family: MieSpecial-Regular, sans-serif;
     }
 
@@ -480,7 +490,7 @@ h3 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #f8f2b1;
+        background-color: #FEE1BB;
         padding: 20px;
         text-align: center;
         width: 40%;
@@ -581,7 +591,7 @@ h3 {
         font-size: 30px;
         transition: 0.6s ease;
         user-select: none;
-        background-color: #f8f2b1b0;
+        background-color: #FEE1BBb0;
         border-radius: 75%;
     }
 
