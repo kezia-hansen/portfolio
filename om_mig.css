@@ -1,27 +1,10 @@
-/* generelt */
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-p {
-    margin-bottom: 10px;
-    line-height: 1.5;
-    font-family: GT-Haptik-Regular, sans-serif;
-}
-
-h3 {
-    font-family: GT-Haptik-Regular, sans-serif;
-}
-
 /* hero / header */
 .logo {
-    width: 33%;
+    width: 42%;
     height: auto;
     position: relative;
-    left: 3%;
-    top: 4px;
+    left: 29%;
+    top: 18px;
 }
 
 /* hero-image */
@@ -40,7 +23,7 @@ h3 {
 .hero-text {
     display: flex;
     position: absolute;
-    top: 50%;
+    top: 59%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -60,8 +43,6 @@ h3 {
     left: 30px;
     top: 64px;
 }
-
-
 
 /* Section - 1 */
 
@@ -104,51 +85,46 @@ h3 {
     left: 56px;
 }
 
-.playliste_img {
+/* Playliste + pop-up */
+
+.playlist img {
+    cursor: pointer;
     display: block;
-    width: 50%;
+    width: 70%;
     height: auto;
     position: relative;
-    top: -130px;
-    left: 24%;
+    top: -170px;
+    left: 15%;
 }
 
-/* Om forening */
-
-.forening_text img {
-    cursor: pointer;
-}
-
-.forening_text {
+.playlist {
     position: relative;
     cursor: pointer;
 }
 
-.forening_text {
+.playlist {
     padding: 50px 20px;
     margin-top: -11px;
 }
 
-.forening_text h2 {
-    text-align: center;
-}
+/* pop-up */
 
 .popup-button {
     display: block;
     position: absolute;
-    bottom: 10px;
+    bottom: 335px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #FEE1BB;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 5px 18px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 0.9rem;
     cursor: pointer;
+    font-family: 'Indie Flower';
 }
 
-/* pop-up */
 .popup {
     display: none;
     position: fixed;
@@ -165,183 +141,75 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FEE1BB;
+    background-image: url(img/Artboard\ 44.svg);
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     text-align: center;
     width: 70%;
     height: 73%;
-    overflow-y: scroll;
+    font-family: 'Indie Flower';
 }
 
-.popup img {
-    width: 90%;
-    height: auto;
-    margin-bottom: 10px;
+.mig {
+    position: relative;
+    top: 101px;
+    right: 3%;
+    text-decoration: none;
+    color: #FDA45F;
 }
 
-.popup h2 {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    text-align: center;
+.web {
+    position: relative;
+    top: 154px;
+    right: 22%;
+    text-decoration: none;
+    color: #FDA45F;
 }
 
-.popup p {
-    font-size: 1rem;
-    text-align: center;
+.ux {
+    position: relative;
+    top: 183px;
+    right: 1%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.anime {
+    position: relative;
+    top: 238px;
+    right: 50%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.indhold {
+    position: relative;
+    top: 266px;
+    right: -12%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.overblik {
+    position: relative;
+    top: 319px;
+    right: 48%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.popup-content a:hover {
+    color: #CC5819;
 }
 
 .close {
     position: fixed;
-    top: 10px;
+    top: -25px;
     right: 10px;
-    font-size: 24px;
+    font-size: 70px;
     cursor: pointer;
-    font-family: GT-Haptik-Light, sans-serif;
-}
-
-/* Tidligere festival */
-.tidligerefestivaler_text {
-    padding: 50px 20px;
-    margin-top: -27px;
-}
-
-.tidligerefestivaler_text h2 {
-    text-align: center;
-}
-
-.figur21 {
-    width: 11%;
-    top: 323%;
-    left: 11%;
-    z-index: -1;
-    position: absolute;
-    height: auto;
-}
-
-.figur3 {
-    width: 16%;
-    top: 345%;
-    left: 82%;
-    z-index: -1;
-    position: absolute;
-    height: auto;
-}
-
-.figur8 {
-    width: 17%;
-    top: 406%;
-    left: 1%;
-    z-index: -1;
-    position: absolute;
-    height: auto;
-}
-
-/* carousel galleri */
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 11px 20px;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    transition: 0.6s ease;
-    user-select: none;
-    background-color: #FEE1BBb0;
-    border-radius: 75%;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 0;
-    position: absolute;
-    bottom: 4px;
-    width: 100%;
-    text-align: center;
-    background-color: #27272787;
-    font-family: GT-Haptik-Regular;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 2px 13px;
-    position: absolute;
-    top: 0px;
-    background-color: #27272787;
-    font-family: GT-Haptik-Regular;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0.4;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-/* bund billede */
-.bund_img {
-    width: 100%;
-    height: 40vh;
-    background-image: url("/img/omalive6.bmp");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-/**************icon************/
-.icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 64%;
-    height: auto;
-    position: relative;
-    margin-top: 11%;
-    margin-left: 18%;
-}
-
-.si {
-    padding: 10%;
-    width: 50%;
+    color: #FEE1BB;
 }
 
 /*********************desktop version ****************************/
