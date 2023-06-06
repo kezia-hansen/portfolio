@@ -144,14 +144,22 @@ img {
 .icons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 35%;
+    width: 29%;
     height: auto;
     position: relative;
-    top: 77%;
-    left: 30%;
+    top: 78%;
+    left: 34%;
 }
 
 .si {
-    padding: 10%;
     width: 50%;
+}
+
+.copy {
+    font-size: 0.6rem;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 280px;
+    left: 24%;
+    color: #FEE1BB;
 }
