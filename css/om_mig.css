@@ -1,0 +1,59 @@
+.track {
+    margin-top: 45%;
+    margin-bottom: 10%;
+}
+
+.selfie {
+    position: relative;
+    top: 10px;
+    left: 19%;
+}
+
+.selfie img {
+    width: 60%;
+    height: auto;
+    border-radius: 100%;
+    border: 4px solid #FEE1BB;
+}
+
+.mememe {
+    background-color: #CC5819;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+
+.mememe h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mememe p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.mememe p:first-child {
+    margin-top: 0;
+}
+
+.mememe p:last-child {
+    margin-bottom: 0;
+}
+
+.mememe p br {
+    display: none;
+}
+
+@media only screen and (min-width: 800px) {
+
+    #name {
+        font-size: 1.8rem;
+        position: absolute;
+        left: 161px;
+        top: 166px;
+    }
+
+}
