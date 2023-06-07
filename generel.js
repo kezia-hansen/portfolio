@@ -17,3 +17,16 @@ function openPopup() {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+
+function openPopup() {
+  if (window.innerWidth >= 768) {
+    // Only open the pop-up on mobile
+    return;
+  }
+
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
