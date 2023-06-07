@@ -8,10 +8,12 @@ body {
 
 h1 {
     font-family: 'Indie Flower';
+    color: #FEE1BB;
 }
 
 h3 {
     font-family: 'Indie Flower';
+    color: #FEE1BB;
 }
 
 h4 {
@@ -20,6 +22,7 @@ h4 {
 
 p {
     font-family: 'Lato';
+    color: #FEE1BB;
 }
 
 img {
