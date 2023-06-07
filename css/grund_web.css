@@ -1,0 +1,146 @@
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 72%;
+    margin-top: 50%;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cover_img1 {
+    position: relative;
+    top: 10px;
+    left: 50%;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: -259px;
+    left: 38%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+}
+
+.button:hover {
+    background-color: #FFD87D;
+    color: #000000;
+}
+
+.button:active {
+    background-color: #FDBF00;
+    color: #FFFFFF;
+}
+
+.cover_img2 {
+    position: relative;
+    top: 262px;
+    left: -55%;
+}
+
+
+.button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: 18px;
+    left: 12%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+}
+
+.button_container {
+    margin-bottom: 10%;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    #name {
+        font-size: 1.8rem;
+        position: absolute;
+        left: 161px;
+        top: 166px;
+    }
+
+    .track {
+        position: relative;
+        top: 587px;
+        left: 0;
+    }
+
+    .image-grid {
+        margin-bottom: 21%;
+        margin-top: 49%;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        margin-bottom: 40%;
+        margin-top: 50%;
+    }
+
+    .image-grid img:hover {
+        transform: scale(1.1);
+        /* Increase the scale of the image on hover */
+    }
+
+    .hero-text h3 {
+        font-size: 1.8rem;
+        position: absolute;
+        left: 159px;
+        top: 64px;
+    }
+
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 15%;
+        height: auto;
+        position: absolute;
+        top: 883px;
+        left: -151%;
+    }
+
+
+    .cover_img1 {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        height: auto;
+        width: 100%;
+    }
+
+    .cover_img2 {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        height: auto;
+        width: 100%;
+    }
+
+    .button_container {
+        display: none;
+    }
+}

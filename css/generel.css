@@ -36,7 +36,7 @@ img {
     margin: 30px;
     overflow: visible;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     top: 0;
     right: 0;
 }
@@ -146,6 +146,7 @@ img {
     position: relative;
     left: 29%;
     top: 18px;
+    z-index: 1;
 }
 
 /* hero-image */
@@ -220,7 +221,6 @@ img {
 }
 
 @media only screen and (min-width: 800px) {
-
     .hero-image {
         position: absolute;
         top: 0;
@@ -253,9 +253,11 @@ img {
     .hero-text h3 {
         font-size: 1.8rem;
         position: absolute;
-        left: 159px;
+        left: 161px;
         top: 64px;
     }
+
+
 
     .container {
         min-height: 100vh;
@@ -273,6 +275,7 @@ img {
         position: fixed;
         bottom: 0;
         margin-top: 50px;
+        pointer-events: none;
     }
 
     .icons {
@@ -281,8 +284,8 @@ img {
         width: 15%;
         height: auto;
         position: absolute;
-        top: 675px;
-        left: 44%;
+        top: 883px;
+        left: -151%;
     }
 
     .si {

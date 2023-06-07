@@ -357,4 +357,20 @@
     .popup-content {
         display: none;
     }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 70%;
+        height: auto;
+        position: relative;
+
+        margin-top: -15%;
+        margin-left: 195%;
+        margin-bottom: 5%;
+    }
+
+    .si {
+        padding: 10%;
+    }
 }
