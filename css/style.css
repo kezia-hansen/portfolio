@@ -1,0 +1,759 @@
+/********************* GENERAL CSS ****************************/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-size: 100% 100%;
+    background-color: #4B1A04;
+}
+
+h1 {
+    font-family: 'Indie Flower';
+    color: #FEE1BB;
+}
+
+h3 {
+    font-family: 'Indie Flower';
+    color: #FEE1BB;
+}
+
+h4 {
+    font-family: 'Indie Flower';
+}
+
+p {
+    font-family: 'Lato';
+    color: #FEE1BB;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/********************* BURGER MENU ****************************/
+
+#burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 30px;
+    overflow: visible;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+    content: "";
+}
+
+#burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+
+    background: #FEE1BB;
+}
+
+#burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+    background: #FEE1BB;
+}
+
+#burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+    background: #FEE1BB;
+}
+
+#burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+    background: #FDA45F;
+}
+
+#burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+    background: #FDA45F;
+}
+
+#burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+}
+
+#menu {
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: #CC5819;
+}
+
+#menu ul {
+    padding: 0;
+}
+
+#menu li {
+    list-style: none;
+    font-family: 'Indie Flower';
+}
+
+#menu ul li a {
+    color: #FDA45F;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    color: #FEE1BB;
+}
+
+#menu ul li a.activee {
+    color: #6E2200;
+    text-decoration: underline;
+}
+
+/********************** HERO IMAGE + LOGO **************************************/
+/* hero / header */
+.logo {
+    width: 42%;
+    height: auto;
+    position: relative;
+    left: 29%;
+    top: 18px;
+    z-index: 1;
+}
+
+/* hero-image */
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background-image: url(/img/hero-image.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero-text {
+    display: flex;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FEE1BB;
+    font-family: 'Indie flower';
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    position: relative;
+    left: -1px;
+    top: -11px;
+}
+
+#name {
+    font-size: 0.8rem;
+    position: absolute;
+    left: 30px;
+    top: 78px;
+}
+
+/********************** FOOTER **************************************/
+.footer {
+    background-image: url(/img/footer.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    position: sticky;
+    margin-top: -275px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 84%;
+    left: 34%;
+}
+
+.si {
+    width: 50%;
+}
+
+.copy {
+    font-size: 0.6rem;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    top: 280px;
+    left: 24%;
+    color: #FEE1BB;
+}
+
+/********************** DESKTOP GENERAL **************************************/
+@media only screen and (min-width: 800px) {
+
+    /* hero / header */
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 104vh;
+        background-image: url(/img/hero-image.png);
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .hero-text {
+        display: flex;
+        position: absolute;
+        top: 59%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #FEE1BB;
+    }
+
+
+    .logo {
+        width: 44%;
+        height: auto;
+        position: relative;
+        left: 28%;
+        top: 16px;
+    }
+
+    .hero-text h1 {
+        font-size: 10rem;
+        margin: 0 7px;
+        padding: 0;
+        text-align: start;
+        position: relative;
+        left: 3%;
+        top: -40px;
+    }
+
+    #name {
+        font-size: 1.8rem;
+        position: absolute;
+        left: 161px;
+        top: 146px;
+    }
+
+    .container {
+        min-height: 100vh;
+        position: relative;
+        padding-bottom: 300px;
+    }
+
+    .footer {
+        background-image: url(/img/footer.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 768px;
+        aspect-ratio: 1366/768;
+        position: fixed;
+        bottom: 0;
+        margin-top: 50px;
+        pointer-events: none;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 20%;
+        height: auto;
+        position: absolute;
+        top: 670px;
+        left: 41%;
+    }
+
+    .si {
+        width: 50%;
+    }
+
+    .copy {
+        font-size: 0.8rem;
+        font-family: 'Lato', sans-serif;
+        position: absolute;
+        top: 729px;
+        left: 41%;
+        color: #FEE1BB;
+    }
+}
+
+/********************** INDEX - MOBIL **************************************/
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60%;
+}
+
+.portaet_img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.content-container {
+    margin-bottom: 30%;
+}
+
+.content-container h3 {
+    text-align: center;
+    color: #FEE1BB;
+    font-size: 3.5rem;
+    position: relative;
+    top: -53px;
+    left: 0;
+}
+
+.bar {
+    width: 24%;
+    height: 4px;
+    background-color: #FEE1BB;
+    position: relative;
+    top: -117px;
+    left: 25%;
+}
+
+.content-container h4 {
+    text-align: center;
+    color: #FEE1BB;
+    font-size: 0.7rem;
+    position: relative;
+    top: -141px;
+    left: 56px;
+}
+
+.gen_knap1 {
+    display: inline-block;
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: relative;
+    top: -233px;
+    left: 28%;
+}
+
+.gen_knap2 {
+    display: inline-block;
+    padding: 5px 11px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: relative;
+    top: -179px;
+    left: -21%;
+}
+
+.gen_knap1 a,
+.gen_knap2 a {
+    color: #FEE1BB;
+    text-decoration: none;
+}
+
+/* Playliste + pop-up */
+
+.playlist img {
+    cursor: pointer;
+    display: block;
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: -170px;
+    left: 15%;
+}
+
+.playlist {
+    position: relative;
+    cursor: pointer;
+}
+
+.playlist {
+    padding: 50px 20px;
+    margin-top: -11px;
+}
+
+/* pop-up */
+
+.popup-button {
+    display: block;
+    position: absolute;
+    bottom: 335px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 18px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(/img/Artboard\ 44.svg);
+    background-size: cover;
+    background-position: center;
+    background-color: #9C2E0E;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+    height: 73%;
+    font-family: 'Indie Flower';
+}
+
+.mig {
+    position: relative;
+    top: 101px;
+    right: 3%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.web {
+    position: relative;
+    top: 154px;
+    right: 22%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.ux {
+    position: relative;
+    top: 183px;
+    right: 1%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.anime {
+    position: relative;
+    top: 238px;
+    right: 50%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.indhold {
+    position: relative;
+    top: 266px;
+    right: -12%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.overblik {
+    position: relative;
+    top: 319px;
+    right: 48%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.close {
+    position: fixed;
+    top: -25px;
+    right: 10px;
+    font-size: 70px;
+    cursor: pointer;
+    color: #FEE1BB;
+}
+
+#tracklist {
+    display: none;
+}
+
+.track_titles {
+    display: none;
+}
+
+/********************** INDEX - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {
+
+    /********************* indledende sektion  ****************************/
+
+    .image-container {
+        position: relative;
+        top: -185px;
+        right: 26%;
+    }
+
+    .portaet_img {
+        display: block;
+        width: 27%;
+        height: auto;
+    }
+
+    .content-container {
+        margin-bottom: 30%;
+    }
+
+    .content-container h3 {
+        font-size: 5.5rem;
+        position: relative;
+        top: -628px;
+        left: 23%;
+    }
+
+    .bar {
+        width: 7%;
+        height: 4px;
+        position: relative;
+        top: -718px;
+        left: 64%;
+    }
+
+    .content-container h4 {
+        font-size: 1.2rem;
+        position: relative;
+        top: -761px;
+        left: 408px;
+    }
+
+    .gen_knap1 {
+        font-size: 1.9rem;
+        cursor: pointer;
+        position: relative;
+        top: -1149px;
+        left: 64%;
+        padding-right: 95px;
+    }
+
+    .gen_knap2 {
+        font-size: 1.9rem;
+        cursor: pointer;
+        position: relative;
+        top: -1041px;
+        left: 39.3%;
+    }
+
+    .gen_knap1 a,
+    .gen_knap2 a {
+        color: #FEE1BB;
+    }
+
+    /* Playliste + pop-up */
+
+    #tracklist {
+        display: block;
+        position: relative;
+        top: -1639px;
+        left: 62%;
+        height: 85vh;
+        aspect-ratio: 439/826;
+    }
+
+    .playlist img {
+        cursor: pointer;
+        display: block;
+        width: 28%;
+        height: auto;
+        position: relative;
+        top: -946px;
+        left: 9%;
+    }
+
+    .playlist {
+        padding: 50px 20px;
+        margin-top: -11px;
+    }
+
+    /* pop-up */
+    .popup-button {
+        display: none;
+    }
+
+    .popup {
+        display: none;
+    }
+
+    .popup-content {
+        display: none;
+    }
+
+    .track_titles {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 2198px;
+        left: 68%;
+    }
+
+    .track_titles a {
+        display: block;
+        margin-bottom: 10px;
+        font-family: 'Indie flower';
+        text-decoration: none;
+        color: #FEE1BB;
+        font-size: 1.3rem;
+    }
+
+    .track_titles a:hover {
+        color: #FDA45F;
+    }
+
+    .mig_web {
+        position: relative;
+        top: -2px;
+        right: 0%;
+    }
+
+    .web2 {
+        position: relative;
+        top: 16px;
+        right: 0%;
+
+    }
+
+    .ux_web {
+        position: relative;
+        top: 32px;
+        right: 0%;
+
+    }
+
+    .anime_web {
+        position: relative;
+        top: 53px;
+        right: 0%;
+
+    }
+
+    .indhold_web {
+        position: relative;
+        top: 69px;
+        right: 0%;
+
+    }
+
+    .overblik_web {
+        position: relative;
+        top: 85px;
+        right: 0%;
+
+    }
+}
+
+/********************** OM MIG - MOBIL **************************************/
+.track {
+    margin-top: 45%;
+    margin-bottom: 10%;
+}
+
+.selfie {
+    position: relative;
+    top: 10px;
+    left: 31%;
+}
+
+
+.selfie img {
+    width: 35%;
+    height: auto;
+}
+
+.mememe {
+    background-color: #CC5819;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+
+.mememe h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mememe p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.mememe p:first-child {
+    margin-top: 0;
+}
+
+.mememe p:last-child {
+    margin-bottom: 0;
+}
+
+.mememe p br {
+    display: none;
+}
