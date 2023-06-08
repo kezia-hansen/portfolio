@@ -871,7 +871,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -259px;
+    top: -243px;
     left: 38%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
@@ -975,7 +975,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -259px;
+    top: -238px;
     left: 38%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
@@ -1040,7 +1040,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -259px;
+    top: -238px;
     left: 38%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
@@ -1049,7 +1049,7 @@ img {
 /********************** ANIMATION - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
     @media only screen and (min-width: 800px) {
-        .track_03 {
+        .track_04 {
             margin-top: 39%;
             margin-bottom: 10%;
         }
@@ -1067,7 +1067,7 @@ img {
             /* Increase the scale of the image on hover */
         }
 
-        .solo_img {
+        .solo_img04 {
             position: relative;
             top: 10px;
             left: 106%;
@@ -1113,7 +1113,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -259px;
+    top: -244px;
     left: 38%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
