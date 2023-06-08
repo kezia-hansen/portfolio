@@ -1078,16 +1078,657 @@ img {
 }
 
 /********************** GRUND INDHOLD - MOBIL **************************************/
+.track_05 {
+    margin-top: 45%;
+    margin-bottom: 10%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 72%;
+    margin-top: -8%;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cover_img3 {
+    position: relative;
+    top: 10px;
+    left: 50%;
+}
+
+.button3 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: -259px;
+    left: 38%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+}
+
+.cover_img4 {
+    position: relative;
+    top: 262px;
+    left: -55%;
+}
+
+
+.button4 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: 18px;
+    left: 12%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+    margin-bottom: 17%;
+}
+
+.button_container {
+    margin-bottom: 10%;
+}
 
 /********************** GRUND INDHOLD - DESKTOP **************************************/
-@media only screen and (min-width: 800px) {}
+@media only screen and (min-width: 800px) {
+    .track_05 {
+        margin-top: 39%;
+        margin-bottom: 10%;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        margin-bottom: 40%;
+        margin-top: -5%;
+    }
+
+    .image-grid img:hover {
+        transform: scale(1.1);
+        /* Increase the scale of the image on hover */
+    }
+
+    .cover_img3 {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        height: auto;
+        width: 100%;
+    }
+
+    .cover_img4 {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        height: auto;
+        width: 96%;
+    }
+
+    .button_container {
+        display: none;
+    }
+}
 
 /********************** OVERBLIK - MOBIL **************************************/
+.track_06 {
+    margin-top: 45%;
+    margin-bottom: 10%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    position: relative;
+    top: 10px;
+    left: 5%;
+}
+
+.image-grid img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.button-text {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: 18px;
+    left: 12%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+    margin-bottom: 17%;
+}
 
 /********************** OVERBLIK - DESKTOP **************************************/
-@media only screen and (min-width: 800px) {}
+@media only screen and (min-width: 800px) {
+    .track_06 {
+        margin-top: 39%;
+        margin-bottom: 10%;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        margin-bottom: 17%;
+        margin-top: -7%;
+    }
+
+
+    .image-grid img:hover {
+        transform: scale(1.1);
+    }
+
+    .button-text {
+        display: none;
+    }
+}
 
 /********************** Proces - MOBIL **************************************/
+.why {
+    margin-top: 49%;
+    margin-bottom: -38%;
+}
+
+.why {
+    background-color: #cc5819;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.why h1 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.why p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.moodboard {
+    margin-top: 184px;
+    color: #FEE1BB;
+}
+
+.art {
+    font-family: 'lato';
+    font-weight: 200;
+}
+
+.color_palette {
+    display: flex;
+    justify-content: center;
+    /* Center the squares horizontally */
+    flex-wrap: nowrap;
+    /* Prevent wrapping of squares to the next line */
+    margin-top: 10px;
+    /* Adjust the margin as needed */
+    width: fit-content;
+    /* Set the width to fit the content */
+    overflow-x: scroll;
+    /* Enable horizontal scrolling for the container */
+}
+
+.color_square {
+    flex-shrink: 0;
+    /* Prevent the squares from shrinking */
+    width: 50px;
+    height: 50px;
+    background-color: #9c2e0e;
+    border: 3px solid #fee1bb;
+    border-radius: 17px;
+    margin: 10px;
+}
+
+.square1 {
+    background-color: #9c2e0e;
+    border: 3px solid #fee1bb;
+}
+
+.square2 {
+    background-color: #fee1bb;
+    border: 3px solid #9c2e0e;
+}
+
+.square3 {
+    background-color: #fda45f;
+    border: 3px solid #fee1bb;
+}
+
+.square4 {
+    background-color: #cc5819;
+    border: 3px solid #fee1bb;
+}
+
+.square5 {
+    background-color: #4b1a04;
+    border: 3px solid #fee1bb;
+}
+
+.indie {
+    text-align: center;
+}
+
+.indie_h3 {
+    font-family: 'Indie Flower';
+}
+
+.indie_p {
+    font-family: 'Indie Flower';
+}
+
+.lato {
+    text-align: center;
+    font-family: 'lato';
+    text-decoration: underline;
+}
+
+.lato_h3 {
+    font-family: 'Lato';
+}
+
+.lato_p {
+    font-family: 'Lato';
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #FEE1BB;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*
+On hover,
+add a black background color with a little bit see-through .prev:hover,
+.next:hover {
+    background-color: #4B1A04;
+} */
+
+/* Caption text */
+.text {
+    color: #FEE1BB;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #4B1A04;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+/* The dots/bullets/indicators */
+/* The dots/circles container */
+.dot-container {
+    display: flex;
+    justify-content: center;
+    /* Center the dots horizontally */
+    margin-top: 10px;
+    /* Adjust the margin as needed */
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    /* Adjust the margin as needed */
+    background-color: #FEE1BB;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #CC5819;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.logo_why {
+    background-color: #cc5819;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.logo_why h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.logo_why p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.logo_why p:first-child {
+    margin-top: 0;
+}
+
+.logo_why p:last-child {
+    margin-bottom: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: -4px;
+    left: 5%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+}
+
+.knapper_sec {
+    margin-bottom: 10%;
+}
+
+.valgte-ord {
+    margin-bottom: 25%;
+}
+
+.valgte-ord img {
+    width: 83%;
+    height: auto;
+    position: relative;
+    top: 10px;
+    left: 10%;
+}
+
 
 /********************** Proces - DESKTOP **************************************/
-@media only screen and (min-width: 800px) {}
+@media only screen and (min-width: 800px) {
+
+    .why {
+        margin-top: 43%;
+    }
+
+    .moodboard {
+        margin-top: 588px;
+        color: #FEE1BB;
+    }
+
+    .color_palette {
+        display: flex;
+        justify-content: center;
+        /* Center the squares horizontally */
+        flex-wrap: nowrap;
+        /* Prevent wrapping of squares to the next line */
+        margin-top: 10px;
+        /* Adjust the margin as needed */
+        width: fit-content;
+        /* Set the width to fit the content */
+        overflow-x: scroll;
+        /* Enable horizontal scrolling for the container */
+    }
+
+    .color_square {
+        width: 100px;
+        height: 100px;
+        background-color: #9c2e0e;
+        border: 3px solid #fee1bb;
+        border-radius: 17px;
+        margin: 10px;
+    }
+
+    .square1 {
+        background-color: #9c2e0e;
+        border: 3px solid #fee1bb;
+    }
+
+    .square2 {
+        background-color: #fee1bb;
+        border: 3px solid #9c2e0e;
+    }
+
+    .square3 {
+        background-color: #fda45f;
+        border: 3px solid #fee1bb;
+    }
+
+    .square4 {
+        background-color: #cc5819;
+        border: 3px solid #fee1bb;
+    }
+
+    .square5 {
+        background-color: #4b1a04;
+        border: 3px solid #fee1bb;
+    }
+
+    .typo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .indie {
+        text-align: center;
+        grid-column: 1;
+    }
+
+
+    .lato {
+        text-align: center;
+    }
+
+
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: #FEE1BB;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: #4B1A04;
+    }
+
+    /* Caption text */
+    .text {
+        color: #FEE1BB;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Lato';
+    }
+
+    .numbertext {
+        color: #4B1A04;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        font-family: 'Lato';
+        font-weight: 700;
+    }
+
+    /* The dots/bullets/indicators */
+    /* The dots/circles container */
+    .dot-container {
+        display: flex;
+        justify-content: center;
+        /* Center the dots horizontally */
+        margin-top: 10px;
+        /* Adjust the margin as needed */
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 5px;
+        /* Adjust the margin as needed */
+        background-color: #FEE1BB;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #FDA45F;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: transparent;
+        color: #FEE1BB;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        top: -4px;
+        left: 5%;
+        border: 2px #FEE1BB solid;
+        border-radius: 30px;
+    }
+
+    .knapper_sec {
+        margin-bottom: 10%;
+    }
+
+    .valgte-ord {
+        margin-bottom: 25%;
+    }
+
+    .valgte-ord img {
+        width: 83%;
+        height: auto;
+        position: relative;
+        top: 10px;
+        left: 10%;
+    }
+}
