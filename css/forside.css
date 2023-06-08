@@ -207,6 +207,10 @@
     display: none;
 }
 
+.track_titles {
+    display: none;
+}
+
 /*********************desktop version ****************************/
 
 @media only screen and (min-width: 700px) {
@@ -326,8 +330,10 @@
     #tracklist {
         display: block;
         position: relative;
-        top: -1626px;
+        top: -1639px;
         left: 62%;
+        height: 85vh;
+        aspect-ratio: 439/826;
     }
 
     .playlist img {
@@ -356,6 +362,68 @@
 
     .popup-content {
         display: none;
+    }
+
+    .track_titles {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 2198px;
+        left: 68%;
+    }
+
+    .track_titles a {
+        display: block;
+        margin-bottom: 10px;
+        font-family: 'Indie flower';
+        text-decoration: none;
+        color: #FEE1BB;
+        font-size: 1.3rem;
+    }
+
+    .track_titles a:hover {
+        color: #FDA45F;
+    }
+
+    .mig_web {
+        position: relative;
+        top: -2px;
+        right: 0%;
+    }
+
+    .web2 {
+        position: relative;
+        top: 16px;
+        right: 0%;
+
+    }
+
+    .ux_web {
+        position: relative;
+        top: 32px;
+        right: 0%;
+
+    }
+
+    .anime_web {
+        position: relative;
+        top: 53px;
+        right: 0%;
+
+    }
+
+    .indhold_web {
+        position: relative;
+        top: 69px;
+        right: 0%;
+
+    }
+
+    .overblik_web {
+        position: relative;
+        top: 85px;
+        right: 0%;
+
     }
 
     .icons {

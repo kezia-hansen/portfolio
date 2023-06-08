@@ -85,14 +85,14 @@ img {
     top: 0px;
     transform: rotate(90deg);
     width: 27px;
-    background: #9C2E0E;
+    background: #FDA45F;
 }
 
 #burger-menu.close span {
     transform: rotate(-45deg);
     top: 13px;
     width: 27px;
-    background: #9C2E0E;
+    background: #FDA45F;
 }
 
 #burger-menu.close span:after {
@@ -121,7 +121,7 @@ img {
     visibility: visible;
     opacity: 1;
     padding-top: 100px;
-    background: #FEE1BB;
+    background: #CC5819;
 }
 
 #menu ul {
@@ -133,12 +133,22 @@ img {
     font-family: 'Indie Flower';
 }
 
-#menu a {
-    color: #9C2E0E;
+#menu ul li a {
+    color: #FDA45F;
     display: block;
     font-size: 32px;
     margin-bottom: 30px;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#menu ul li a:hover {
+    color: #FEE1BB;
+}
+
+#menu ul li a.activee {
+    color: #6E2200;
+    text-decoration: underline;
 }
 
 /********************** hero image **************************************/
