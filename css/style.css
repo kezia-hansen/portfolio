@@ -710,7 +710,7 @@ img {
 }
 
 /********************** OM MIG - MOBIL **************************************/
-.track {
+.track_01 {
     margin-top: 45%;
     margin-bottom: 10%;
 }
@@ -727,11 +727,19 @@ img {
     height: auto;
 }
 
+.skills {
+    position: relative;
+    top: -16px;
+    left: 19%;
+}
+
+.skills img {
+    width: 60%;
+    height: auto;
+}
+
 .mememe {
-    background-color: #CC5819;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20%;
     margin-top: 10%;
 }
@@ -739,11 +747,17 @@ img {
 .mememe h1 {
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .mememe p {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
+    text-align: center;
+    margin-left: -6px;
+    margin-right: -6px;
+    font-family: lato;
+    font-weight: 200;
 }
 
 .mememe p:first-child {
@@ -754,6 +768,207 @@ img {
     margin-bottom: 0;
 }
 
-.mememe p br {
-    display: none;
+.intro {
+    margin-bottom: 1em;
 }
+
+.closing {
+    margin-top: 2em;
+}
+
+/********************** OM MIG - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {
+    .track_01 {
+        margin-top: 39%;
+        margin-bottom: 10%;
+    }
+
+    .grid_1_1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        position: relative;
+        right: 4%;
+        top: -635px;
+    }
+
+    .selfie {
+        grid-column: 1 / 2;
+        position: relative;
+        top: -40px;
+        left: 31%;
+    }
+
+    .selfie img {
+        width: 45%;
+        height: auto;
+    }
+
+    .mememe {
+        grid-column: 2 / 3;
+    }
+
+
+    .mememe h1 {
+        position: relative;
+        top: -64px;
+        left: -109%;
+        font-size: 3rem;
+    }
+
+    .mememe p {
+        line-height: 2;
+        text-align: left;
+        position: relative;
+        top: -64px;
+        left: 0%;
+
+
+    }
+
+    .skills {
+        position: relative;
+        top: 509px;
+        left: 19%;
+    }
+}
+
+/********************** GRUND WEB - MOBIL **************************************/
+
+.track_02 {
+    margin-top: 45%;
+    margin-bottom: 10%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 72%;
+    margin-top: -8%;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.cover_img1 {
+    position: relative;
+    top: 10px;
+    left: 50%;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: -259px;
+    left: 38%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+}
+
+.cover_img2 {
+    position: relative;
+    top: 262px;
+    left: -55%;
+}
+
+
+.button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: 18px;
+    left: 12%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+    margin-bottom: 17%;
+}
+
+.button_container {
+    margin-bottom: 10%;
+}
+
+/********************** GRUND WEB - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {
+    .track_02 {
+        margin-top: 39%;
+        margin-bottom: 10%;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        margin-bottom: 40%;
+        margin-top: -5%;
+    }
+
+    .image-grid img:hover {
+        transform: scale(1.1);
+        /* Increase the scale of the image on hover */
+    }
+
+    .cover_img1 {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        height: auto;
+        width: 100%;
+    }
+
+    .cover_img2 {
+        position: relative;
+        top: 10px;
+        left: 50%;
+        height: auto;
+        width: 96%;
+    }
+
+    .button_container {
+        display: none;
+    }
+}
+
+
+/********************** GRUND UX - MOBIL **************************************/
+
+/********************** GRUND UX - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {}
+
+
+/********************** ANIMATION - MOBIL **************************************/
+
+/********************** ANIMATION - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {}
+
+/********************** GRUND INDHOLD - MOBIL **************************************/
+
+/********************** GRUND INDHOLD - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {}
+
+/********************** OVERBLIK - MOBIL **************************************/
+
+/********************** OVERBLIK - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {}
+
+/********************** Proces - MOBIL **************************************/
+
+/********************** Proces - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {}
