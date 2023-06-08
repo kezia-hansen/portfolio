@@ -948,15 +948,134 @@ img {
 
 
 /********************** GRUND UX - MOBIL **************************************/
+.track_03 {
+    margin-top: 45%;
+    margin-bottom: 10%;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.solo_img {
+    position: relative;
+    top: 10px;
+    left: 50%;
+}
+
+.solo_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: -259px;
+    left: 38%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+}
+
 
 /********************** GRUND UX - DESKTOP **************************************/
-@media only screen and (min-width: 800px) {}
+@media only screen and (min-width: 800px) {
+    .track_03 {
+        margin-top: 39%;
+        margin-bottom: 10%;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        margin-bottom: 40%;
+        margin-top: -5%;
+    }
+
+    .image-grid img:hover {
+        transform: scale(1.1);
+        /* Increase the scale of the image on hover */
+    }
+
+    .solo_img {
+        position: relative;
+        top: 10px;
+        left: 106%;
+        height: auto;
+        width: 100%;
+    }
+}
 
 
 /********************** ANIMATION - MOBIL **************************************/
+.track_04 {
+    margin-top: 45%;
+    margin-bottom: 10%;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.solo_img04 {
+    position: relative;
+    top: 10px;
+    left: 50%;
+}
+
+.solo_button04 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FEE1BB;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    top: -259px;
+    left: 38%;
+    border: 2px #FEE1BB solid;
+    border-radius: 30px;
+}
 
 /********************** ANIMATION - DESKTOP **************************************/
-@media only screen and (min-width: 800px) {}
+@media only screen and (min-width: 800px) {
+    @media only screen and (min-width: 800px) {
+        .track_03 {
+            margin-top: 39%;
+            margin-bottom: 10%;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 40px;
+            margin-bottom: 40%;
+            margin-top: -5%;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.1);
+            /* Increase the scale of the image on hover */
+        }
+
+        .solo_img {
+            position: relative;
+            top: 10px;
+            left: 106%;
+            height: auto;
+            width: 100%;
+        }
+    }
+}
 
 /********************** GRUND INDHOLD - MOBIL **************************************/
 
