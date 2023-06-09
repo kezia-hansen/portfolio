@@ -220,6 +220,20 @@ img {
     top: 78px;
 }
 
+/********************** Knap til sites **************************************/
+
+.link_site {
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+
+}
+
 /********************** FOOTER **************************************/
 .footer {
     background-image: url(/img/footer.svg);
@@ -471,6 +485,25 @@ img {
         color: #FDA45F;
     }
 
+    /********************** Knap til sites **************************************/
+
+    .link_site {
+        padding: 5px 35px;
+        background-color: transparent;
+        color: #FEE1BB;
+        border-radius: 30px;
+        border: #FEE1BB solid 2px;
+        font-size: 2rem;
+        cursor: pointer;
+        font-family: 'Indie Flower';
+
+    }
+
+    .link_site:hover {
+        background-color: #9C2E0E;
+    }
+
+    /********************** FOOTER **************************************/
 
     .container {
         min-height: 100vh;
@@ -1088,7 +1121,7 @@ img {
         margin-top: 42%;
     }
 
-    .image-grid img:hover {
+    .image-grid01 img:hover {
         transform: scale(1.1);
         /* Increase the scale of the image on hover */
     }
@@ -1919,7 +1952,7 @@ add a black background color with a little bit see-through .prev:hover,
     margin: 52% 12%;
 }
 
-.text-section,
+.text-section_ssp,
 .image-section {
     width: 100%;
     padding: 20px;
@@ -1931,14 +1964,14 @@ add a black background color with a little bit see-through .prev:hover,
     margin-bottom: 20px;
 }
 
-.text-section h2,
+.text-section_ssp h2,
 .image-section h2 {
-    font-size: 18px;
+    font-size: 2rem;
     margin-bottom: 10px;
     font-family: 'Indie flower';
 }
 
-.text-section p,
+.text-section_ssp p,
 .image-section p {
     font-size: 18px;
     margin-bottom: 10px;
@@ -1993,13 +2026,15 @@ add a black background color with a little bit see-through .prev:hover,
         margin: 52% 2%;
     }
 
-    .text-section,
+    .text-section_ssp,
     .image-section {
         width: 50%;
     }
 
-    .text-section {
+    .text-section_ssp {
         margin-right: 20px;
+        position: relative;
+        bottom: 534px;
     }
 
     .image-section {
