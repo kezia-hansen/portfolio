@@ -1986,7 +1986,46 @@ add a black background color with a little bit see-through .prev:hover,
     box-shadow: 0 2px 4px #180901;
 }
 
+.logo_emne {
+    width: 45%;
+    height: auto;
+    position: relative;
+    left: 29%;
+}
 
+.text-section_emne,
+.image-section {
+    width: 100%;
+    padding: 20px;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    margin-bottom: 20px;
+}
+
+.text-section_emne h2,
+.image-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Indie flower';
+}
+
+.text-section_emne p,
+.image-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.image-section img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #180901;
+}
 
 /********************** PROJEKT - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
@@ -2040,4 +2079,21 @@ add a black background color with a little bit see-through .prev:hover,
     .image-section {
         margin-left: 20px;
     }
+
+    .text-section_emne,
+    .image-section {
+        width: 50%;
+    }
+
+    .text-section_emne {
+        margin-right: 20px;
+        position: relative;
+        bottom: 1186px;
+    }
+
+
+    .image-section {
+        margin-left: 20px;
+    }
+
 }
