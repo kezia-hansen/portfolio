@@ -152,6 +152,25 @@ img {
     text-decoration: underline;
 }
 
+/********************** Brødkrumme sti **************************************/
+
+.breadcrumbs {
+    display: none;
+}
+
+.breadcrumbs_spil {
+    display: none;
+}
+
+.breadcrumbs_video {
+    display: none;
+}
+
+.breadcrumbs_virksomhedssite {
+    display: none;
+}
+
+
 /********************** HERO IMAGE + LOGO **************************************/
 /* hero / header */
 .logo {
@@ -210,6 +229,7 @@ img {
     height: 300px;
     position: sticky;
     margin-top: -275px;
+    pointer-events: none;
 }
 
 .icons {
@@ -286,6 +306,171 @@ img {
         left: 161px;
         top: 146px;
     }
+
+    /********************** Brødkrumme sti **************************************/
+
+    .breadcrumbs {
+        display: block;
+        margin-top: -137px;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        position: relative;
+        top: 1051px;
+        left: 2%;
+    }
+
+    .breadcrumbs ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .breadcrumbs li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .breadcrumbs li:last-child {
+        margin-right: 0;
+    }
+
+    .breadcrumbs a {
+        text-decoration: none;
+        color: #000;
+        padding: 6px 8px;
+        background-color: #FEE1BB;
+        color: #9C2E0E;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .breadcrumbs a:hover {
+        background-color: #CC5819;
+        color: #FDA45F;
+    }
+
+    .breadcrumbs_spil {
+        display: block;
+        margin-top: -137px;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        position: relative;
+        top: 974px;
+        left: 2%;
+    }
+
+    .breadcrumbs_spil ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .breadcrumbs_spil li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .breadcrumbs_spil li:last-child {
+        margin-right: 0;
+    }
+
+    .breadcrumbs_spil a {
+        text-decoration: none;
+        color: #000;
+        padding: 6px 8px;
+        background-color: #FEE1BB;
+        color: #9C2E0E;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .breadcrumbs_spil a:hover {
+        background-color: #CC5819;
+        color: #FDA45F;
+    }
+
+    .breadcrumbs_video {
+        display: block;
+        margin-top: -137px;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        position: relative;
+        top: 974px;
+        left: 2%;
+    }
+
+    .breadcrumbs_video ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .breadcrumbs_video li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .breadcrumbs_video li:last-child {
+        margin-right: 0;
+    }
+
+    .breadcrumbs_video a {
+        text-decoration: none;
+        color: #000;
+        padding: 6px 8px;
+        background-color: #FEE1BB;
+        color: #9C2E0E;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .breadcrumbs_video a:hover {
+        background-color: #CC5819;
+        color: #FDA45F;
+    }
+
+
+
+    .breadcrumbs_virksomhedssite {
+        display: block;
+        margin-top: -137px;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        position: relative;
+        top: 974px;
+        left: 2%;
+    }
+
+    .breadcrumbs_virksomhedssite ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .breadcrumbs_virksomhedssite li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .breadcrumbs_virksomhedssite li:last-child {
+        margin-right: 0;
+    }
+
+    .breadcrumbs_virksomhedssite a {
+        text-decoration: none;
+        color: #000;
+        padding: 6px 8px;
+        background-color: #FEE1BB;
+        color: #9C2E0E;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .breadcrumbs_virksomhedssite a:hover {
+        background-color: #CC5819;
+        color: #FDA45F;
+    }
+
 
     .container {
         min-height: 100vh;
@@ -477,50 +662,50 @@ img {
     font-family: 'Indie Flower';
 }
 
-.mig {
+.ssp {
     position: relative;
     top: 101px;
-    right: 3%;
+    right: -5%;
     text-decoration: none;
     color: #FDA45F;
 }
 
-.web {
+.emne {
     position: relative;
     top: 154px;
+    right: 45%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.pitch {
+    position: relative;
+    top: 209px;
+    right: 71%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.spil {
+    position: relative;
+    top: 239px;
+    right: -10%;
+    text-decoration: none;
+    color: #FDA45F;
+}
+
+.video {
+    position: relative;
+    top: 296px;
     right: 22%;
     text-decoration: none;
     color: #FDA45F;
 }
 
-.ux {
+.virksomhed {
     position: relative;
-    top: 183px;
-    right: 1%;
-    text-decoration: none;
-    color: #FDA45F;
-}
-
-.anime {
-    position: relative;
-    top: 238px;
-    right: 50%;
-    text-decoration: none;
-    color: #FDA45F;
-}
-
-.indhold {
-    position: relative;
-    top: 266px;
-    right: -12%;
-    text-decoration: none;
-    color: #FDA45F;
-}
-
-.overblik {
-    position: relative;
-    top: 319px;
-    right: 48%;
+    top: 345px;
+    right: 47%;
     text-decoration: none;
     color: #FDA45F;
 }
@@ -667,41 +852,41 @@ img {
         color: #FDA45F;
     }
 
-    .mig_web {
+    .ssp_web {
         position: relative;
         top: -2px;
         right: 0%;
     }
 
-    .web2 {
+    .emne2 {
         position: relative;
         top: 16px;
         right: 0%;
 
     }
 
-    .ux_web {
+    .pitch_web {
         position: relative;
         top: 32px;
         right: 0%;
 
     }
 
-    .anime_web {
+    .spil_web {
         position: relative;
         top: 53px;
         right: 0%;
 
     }
 
-    .indhold_web {
+    .video_web {
         position: relative;
         top: 69px;
         right: 0%;
 
     }
 
-    .overblik_web {
+    .virksomhed_web {
         position: relative;
         top: 85px;
         right: 0%;
@@ -710,17 +895,12 @@ img {
 }
 
 /********************** OM MIG - MOBIL **************************************/
-.track_01 {
-    margin-top: 45%;
-    margin-bottom: 10%;
-}
 
 .selfie {
     position: relative;
-    top: 10px;
+    top: 218px;
     left: 31%;
 }
-
 
 .selfie img {
     width: 35%;
@@ -729,9 +909,10 @@ img {
 
 .skills {
     position: relative;
-    top: -16px;
+    top: 201px;
     left: 19%;
 }
+
 
 .skills img {
     width: 60%;
@@ -741,8 +922,9 @@ img {
 .mememe {
     padding: 20px;
     margin-bottom: 20%;
-    margin-top: 10%;
+    margin-top: 52%;
 }
+
 
 .mememe h1 {
     font-size: 24px;
@@ -778,10 +960,6 @@ img {
 
 /********************** OM MIG - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
-    .track_01 {
-        margin-top: 39%;
-        margin-bottom: 10%;
-    }
 
     .grid_1_1 {
         display: grid;
@@ -790,7 +968,8 @@ img {
         align-items: center;
         position: relative;
         right: 4%;
-        top: -635px;
+        top: -66px;
+        margin-bottom: 30%;
     }
 
     .selfie {
@@ -812,7 +991,7 @@ img {
 
     .mememe h1 {
         position: relative;
-        top: -64px;
+        top: -190px;
         left: -109%;
         font-size: 3rem;
     }
@@ -821,33 +1000,26 @@ img {
         line-height: 2;
         text-align: left;
         position: relative;
-        top: -64px;
+        top: -180px;
         left: 0%;
-
-
     }
 
     .skills {
         position: relative;
-        top: 509px;
+        top: 1259px;
         left: 19%;
     }
 }
 
 /********************** GRUND WEB - MOBIL **************************************/
-
-.track_02 {
-    margin-top: 45%;
-    margin-bottom: 10%;
-}
-
-.image-grid {
+.image-grid01 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     margin-bottom: 72%;
-    margin-top: -8%;
+    margin-top: 52%;
 }
+
 
 .image-grid img {
     width: 100%;
@@ -871,7 +1043,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -243px;
+    top: -256px;
     left: 38%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
@@ -905,19 +1077,15 @@ img {
     margin-bottom: 10%;
 }
 
+
 /********************** GRUND WEB - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
-    .track_02 {
-        margin-top: 39%;
-        margin-bottom: 10%;
-    }
-
-    .image-grid {
+    .image-grid01 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px;
         margin-bottom: 40%;
-        margin-top: -5%;
+        margin-top: 42%;
     }
 
     .image-grid img:hover {
@@ -948,24 +1116,27 @@ img {
 
 
 /********************** GRUND UX - MOBIL **************************************/
-.track_03 {
-    margin-top: 45%;
-    margin-bottom: 10%;
+.image-grid03 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 78%;
+    margin-top: 50%;
 }
 
-.image-grid img {
+.image-grid03 img {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
 }
 
-.solo_img {
+.solo_img03 {
     position: relative;
     top: 10px;
     left: 50%;
 }
 
-.solo_button {
+.solo_button03 {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
@@ -984,25 +1155,20 @@ img {
 
 /********************** GRUND UX - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
-    .track_03 {
-        margin-top: 39%;
-        margin-bottom: 10%;
-    }
-
-    .image-grid {
+    .image-grid03 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px;
-        margin-bottom: 40%;
-        margin-top: -5%;
+        margin-bottom: 24%;
+        margin-top: 43%;
     }
 
-    .image-grid img:hover {
+    .image-grid03 img:hover {
         transform: scale(1.1);
         /* Increase the scale of the image on hover */
     }
 
-    .solo_img {
+    .solo_img03 {
         position: relative;
         top: 10px;
         left: 106%;
@@ -1011,11 +1177,14 @@ img {
     }
 }
 
-
 /********************** ANIMATION - MOBIL **************************************/
-.track_04 {
-    margin-top: 45%;
-    margin-bottom: 10%;
+
+.image-grid04 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 78%;
+    margin-top: 50%;
 }
 
 .image-grid img {
@@ -1046,50 +1215,41 @@ img {
     border-radius: 30px;
 }
 
+
 /********************** ANIMATION - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
-    @media only screen and (min-width: 800px) {
-        .track_04 {
-            margin-top: 39%;
-            margin-bottom: 10%;
-        }
+    .image-grid04 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        margin-bottom: 24%;
+        margin-top: 43%;
+    }
 
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 40px;
-            margin-bottom: 40%;
-            margin-top: -5%;
-        }
+    .image-grid04 img:hover {
+        transform: scale(1.1);
+        /* Increase the scale of the image on hover */
+    }
 
-        .image-grid img:hover {
-            transform: scale(1.1);
-            /* Increase the scale of the image on hover */
-        }
-
-        .solo_img04 {
-            position: relative;
-            top: 10px;
-            left: 106%;
-            height: auto;
-            width: 100%;
-        }
+    .solo_img04 {
+        position: relative;
+        top: 10px;
+        left: 106%;
+        height: auto;
+        width: 100%;
     }
 }
 
-/********************** GRUND INDHOLD - MOBIL **************************************/
-.track_05 {
-    margin-top: 45%;
-    margin-bottom: 10%;
-}
 
-.image-grid {
+/********************** GRUND INDHOLD - MOBIL **************************************/
+.image-grid05 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     margin-bottom: 72%;
-    margin-top: -8%;
+    margin-top: 55%;
 }
+
 
 .image-grid img {
     width: 100%;
@@ -1149,17 +1309,12 @@ img {
 
 /********************** GRUND INDHOLD - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
-    .track_05 {
-        margin-top: 39%;
-        margin-bottom: 10%;
-    }
-
-    .image-grid {
+    .image-grid05 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px;
         margin-bottom: 40%;
-        margin-top: -5%;
+        margin-top: 42%;
     }
 
     .image-grid img:hover {
@@ -1189,21 +1344,18 @@ img {
 }
 
 /********************** OVERBLIK - MOBIL **************************************/
-.track_06 {
-    margin-top: 45%;
-    margin-bottom: 10%;
-}
 
-.image-grid {
+.image-grid06 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
     position: relative;
-    top: 10px;
+    top: 200px;
     left: 5%;
+    margin-bottom: 71%;
 }
 
-.image-grid img {
+.image-grid06 img {
     width: 80%;
     height: auto;
     transition: transform 0.3s ease;
@@ -1228,21 +1380,15 @@ img {
 
 /********************** OVERBLIK - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
-    .track_06 {
-        margin-top: 39%;
-        margin-bottom: 10%;
-    }
-
-    .image-grid {
+    .image-grid06 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px;
-        margin-bottom: 17%;
-        margin-top: -7%;
+        margin-bottom: 29%;
+        margin-top: 30%;
     }
 
-
-    .image-grid img:hover {
+    .image-grid06 img:hover {
         transform: scale(1.1);
     }
 
@@ -1485,6 +1631,7 @@ add a black background color with a little bit see-through .prev:hover,
 .logo_why p {
     font-size: 16px;
     line-height: 1.6;
+    font-weight: 200;
 }
 
 .logo_why p:first-child {
@@ -1730,5 +1877,132 @@ add a black background color with a little bit see-through .prev:hover,
         position: relative;
         top: 10px;
         left: 10%;
+    }
+}
+
+/********************** PROJEKT - MOBIL **************************************/
+
+.track_01 {
+    margin-top: 45%;
+    margin-bottom: -46%;
+}
+
+.track_02 {
+    margin-top: 39%;
+    margin-bottom: -47%;
+}
+
+.track_03 {
+    margin-top: 45%;
+    margin-bottom: -43%;
+}
+
+.track_04 {
+    margin-top: 45%;
+    margin-bottom: -45%;
+}
+
+.track_06 {
+    margin-top: 45%;
+    margin-bottom: -45%;
+}
+
+.track_05 {
+    margin-top: 45%;
+    margin-bottom: -45%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 52% 12%;
+}
+
+.text-section,
+.image-section {
+    width: 100%;
+    padding: 20px;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    margin-bottom: 20px;
+}
+
+.text-section h2,
+.image-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Indie flower';
+}
+
+.text-section p,
+.image-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.image-section img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #180901;
+}
+
+
+
+/********************** PROJEKT - DESKTOP **************************************/
+@media only screen and (min-width: 800px) {
+
+    .track_01 {
+        margin-bottom: -43%;
+    }
+
+    .track_02 {
+        margin-top: 45%;
+        margin-bottom: -43%;
+    }
+
+    .track_03 {
+        margin-top: 45%;
+        margin-bottom: -45%;
+    }
+
+    .track_04 {
+        margin-top: 39%;
+        margin-bottom: -46%;
+    }
+
+
+    .track_05 {
+        margin-top: 39%;
+        margin-bottom: -45%;
+    }
+
+    .track_06 {
+        margin-top: 39%;
+        margin-bottom: -45%;
+    }
+
+    .content {
+        flex-direction: row;
+        margin: 52% 2%;
+    }
+
+    .text-section,
+    .image-section {
+        width: 50%;
+    }
+
+    .text-section {
+        margin-right: 20px;
+    }
+
+    .image-section {
+        margin-left: 20px;
     }
 }
