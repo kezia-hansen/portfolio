@@ -827,28 +827,23 @@ img {
 
     /* Playliste + pop-up */
 
+    img[src="img/Artboard 43.svg"],
+    .popup-button,
     #tracklist {
-        display: block;
+        display: none;
+    }
+
+    .desktop_track {
+        background-image: url(/img/index_track.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        aspect-ratio: 1049/710;
+        padding: 50px 20px;
+        margin-top: -11px;
         position: relative;
         top: -1639px;
         left: 62%;
         height: 85vh;
-        aspect-ratio: 439/826;
-    }
-
-    .playlist img {
-        cursor: pointer;
-        display: block;
-        width: 28%;
-        height: auto;
-        position: relative;
-        top: -946px;
-        left: 9%;
-    }
-
-    .playlist {
-        padding: 50px 20px;
-        margin-top: -11px;
     }
 
     /* pop-up */
