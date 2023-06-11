@@ -925,7 +925,10 @@ img {
         right: 0%;
 
     }
+
+
 }
+
 
 /********************** OM MIG - MOBIL **************************************/
 
@@ -1185,6 +1188,55 @@ img {
     border-radius: 30px;
 }
 
+/* Caption text */
+.text2 {
+    color: #FEE1BB;
+    background-color: #4B1A04;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+/* Number text (1/3 etc) */
+.numbertext2 {
+    color: #4B1A04;
+    background-color: #FEE1BB;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+.dot-container2 {
+    display: flex;
+    justify-content: center;
+    /* Center the dots horizontally */
+    margin-top: 10px;
+    /* Adjust the margin as needed */
+}
+
+.dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    /* Adjust the margin as needed */
+    background-color: #FEE1BB;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot2:hover {
+    background-color: #CC5819;
+}
 
 /********************** GRUND UX - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
@@ -2056,6 +2108,132 @@ add a black background color with a little bit see-through .prev:hover,
 .text-section03 p,
 .image-section p {
     font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.text-section03 ul {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.image-section img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #180901;
+}
+
+.text-section04,
+.image-section {
+    width: 100%;
+    padding: 20px;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    margin-bottom: 20px;
+}
+
+.text-section04 h2,
+.image-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Indie flower';
+}
+
+.text-section04 p,
+.image-section p {
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.text-section04 ul {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.image-section img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #180901;
+}
+
+.text-section05,
+.image-section {
+    width: 100%;
+    padding: 20px;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    margin-bottom: 20px;
+}
+
+.text-section05 h2,
+.image-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Indie flower';
+}
+
+.text-section05 p,
+.image-section p {
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.text-section05 ul {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.image-section img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #180901;
+}
+
+.text-section06,
+.image-section {
+    width: 100%;
+    padding: 20px;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    margin-bottom: 20px;
+}
+
+.text-section06 h2,
+.image-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Indie flower';
+}
+
+.text-section06 p,
+.image-section p {
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: 200;
+}
+
+.text-section06 ul {
+    font-size: 18px;
     margin-bottom: 10px;
     font-family: 'Lato';
     font-weight: 200;
@@ -2114,7 +2292,7 @@ add a black background color with a little bit see-through .prev:hover,
     .text-section_ssp {
         margin-right: 20px;
         position: relative;
-        bottom: 534px;
+        bottom: 501px;
     }
 
     .image-section {
@@ -2129,7 +2307,8 @@ add a black background color with a little bit see-through .prev:hover,
     .text-section_emne {
         margin-right: 20px;
         position: relative;
-        bottom: 1186px;
+        bottom: 1154px;
+        ;
     }
 
 
@@ -2137,7 +2316,7 @@ add a black background color with a little bit see-through .prev:hover,
         margin-left: 20px;
     }
 
-    .text-section03,
+    .text-section_emne,
     .image-section {
         width: 50%;
     }
@@ -2145,12 +2324,57 @@ add a black background color with a little bit see-through .prev:hover,
     .text-section03 {
         margin-right: 20px;
         position: relative;
-        bottom: 1186px;
+        bottom: 967px;
     }
-
 
     .image-section {
         margin-left: 20px;
     }
 
+
+    .text-section04,
+    .image-section {
+        width: 50%;
+    }
+
+    .text-section04 {
+        margin-right: 20px;
+        position: relative;
+        bottom: 864px;
+    }
+
+    .image-section {
+        margin-left: 20px;
+    }
+
+    .text-section05,
+    .image-section {
+        width: 50%;
+    }
+
+    .text-section05 {
+        margin-right: 20px;
+        position: relative;
+        bottom: 529px;
+    }
+
+    .image-section {
+        margin-left: 20px;
+    }
+
+
+    .text-section06,
+    .image-section {
+        width: 50%;
+    }
+
+    .text-section06 {
+        margin-right: 20px;
+        position: relative;
+        bottom: 408px;
+    }
+
+    .image-section {
+        margin-left: 20px;
+    }
 }
