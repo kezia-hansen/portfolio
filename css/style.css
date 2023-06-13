@@ -3,8 +3,13 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-size: 100% 100%;
     background-color: #4B1A04;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
@@ -178,7 +183,7 @@ img {
     height: auto;
     position: relative;
     left: 29%;
-    top: 18px;
+    top: 5px;
     z-index: 1;
 }
 
@@ -220,20 +225,6 @@ img {
     top: 78px;
 }
 
-/********************** Knap til sites **************************************/
-
-.link_site {
-    padding: 5px 35px;
-    background-color: transparent;
-    color: #FEE1BB;
-    border-radius: 30px;
-    border: #FEE1BB solid 2px;
-    font-size: 1rem;
-    cursor: pointer;
-    font-family: 'Indie Flower';
-
-}
-
 /********************** FOOTER **************************************/
 .footer {
     background-image: url(/img/footer.svg);
@@ -241,32 +232,55 @@ img {
     background-repeat: no-repeat;
     width: 100%;
     height: 300px;
-    position: sticky;
-    margin-top: -275px;
-    pointer-events: none;
+    position: fixed;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 30%;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 84%;
-    left: 34%;
+    bottom: -118px;
+    left: -132px;
 }
 
 .si {
-    width: 50%;
+    width: 18px;
+    height: auto;
+    margin: 0 5px;
 }
 
 .copy {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-family: 'Lato', sans-serif;
-    position: relative;
-    top: 280px;
-    left: 24%;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
     color: #FEE1BB;
+}
+
+.contact-info {
+    margin-top: 20px;
+    color: #FEE1BB;
+    font-size: 0.6rem;
+    text-align: center;
+    position: absolute;
+    bottom: -1px;
+    right: 22px;
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+.contact-info a {
+    color: #FEE1BB;
+    text-decoration: none;
 }
 
 /********************** DESKTOP GENERAL **************************************/
@@ -443,8 +457,6 @@ img {
         color: #FDA45F;
     }
 
-
-
     .breadcrumbs_virksomhedssite {
         display: block;
         margin-top: -137px;
@@ -530,9 +542,10 @@ img {
         width: 20%;
         height: auto;
         position: absolute;
-        top: 670px;
+        top: 513px;
         left: 41%;
     }
+
 
     .si {
         width: 50%;
@@ -542,17 +555,30 @@ img {
         font-size: 0.8rem;
         font-family: 'Lato', sans-serif;
         position: absolute;
-        top: 729px;
+        top: 739px;
         left: 41%;
         color: #FEE1BB;
+    }
+
+
+    .contact-info {
+        margin-top: 20px;
+        color: #FEE1BB;
+        font-size: 1rem;
+        text-align: center;
+        position: relative;
+        top: 647px;
+        left: 29%;
     }
 }
 
 /********************** INDEX - MOBIL **************************************/
+/* Selvportræt */
 .image-container {
     display: flex;
     justify-content: center;
-    margin-top: 60%;
+    margin-top: 25vh;
+    overflow: hidden;
 }
 
 .portaet_img {
@@ -561,8 +587,9 @@ img {
     height: auto;
 }
 
+/* overskrift med linje og dato */
 .content-container {
-    margin-bottom: 30%;
+    margin-bottom: 11vh;
 }
 
 .content-container h3 {
@@ -592,16 +619,21 @@ img {
     left: 56px;
 }
 
+/* General Knappe stil */
+.gen_knap {
+    margin-top: 16px;
+    font-family: 'Indie Flower';
+    font-size: 0.9rem;
+
+}
+
 .gen_knap1 {
     display: inline-block;
     padding: 5px 35px;
     background-color: transparent;
-    color: #FEE1BB;
     border-radius: 30px;
     border: #FEE1BB solid 2px;
-    font-size: 0.9rem;
     cursor: pointer;
-    font-family: 'Indie Flower';
     position: relative;
     top: -233px;
     left: 28%;
@@ -611,15 +643,13 @@ img {
     display: inline-block;
     padding: 5px 11px;
     background-color: transparent;
-    color: #FEE1BB;
     border-radius: 30px;
     border: #FEE1BB solid 2px;
-    font-size: 0.9rem;
     cursor: pointer;
-    font-family: 'Indie Flower';
+    text-decoration: none;
     position: relative;
     top: -179px;
-    left: -21%;
+    left: -13%;
 }
 
 .gen_knap1 a,
@@ -643,15 +673,11 @@ img {
 .playlist {
     position: relative;
     cursor: pointer;
-}
-
-.playlist {
     padding: 50px 20px;
     margin-top: -11px;
 }
 
-/* pop-up */
-
+/* Pop-up Button */
 .popup-button {
     display: block;
     position: absolute;
@@ -668,6 +694,7 @@ img {
     font-family: 'Indie Flower';
 }
 
+/* Pop-up */
 .popup {
     display: none;
     position: fixed;
@@ -684,65 +711,69 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(/img/Artboard\ 44.svg);
+    background-image: url(/img/forside/Artboard_44.svg);
+    aspect-ratio: 439/826;
     background-size: cover;
     background-position: center;
     background-color: #9C2E0E;
     padding: 20px;
     text-align: center;
-    width: 70%;
-    height: 73%;
+    width: 52%;
+    height: 53%;
     font-family: 'Indie Flower';
 }
 
+/* Pop-up Links */
 .ssp {
     position: relative;
-    top: 101px;
-    right: -5%;
+    top: 30px;
+    right: -15%;
     text-decoration: none;
     color: #FDA45F;
 }
 
+
 .emne {
     position: relative;
-    top: 154px;
-    right: 45%;
+    top: 76px;
+    right: 41%;
     text-decoration: none;
     color: #FDA45F;
 }
 
 .pitch {
     position: relative;
-    top: 209px;
-    right: 71%;
+    top: 120px;
+    right: 70%;
     text-decoration: none;
     color: #FDA45F;
 }
 
 .spil {
     position: relative;
-    top: 239px;
-    right: -10%;
+    top: 141px;
+    right: 2%;
     text-decoration: none;
     color: #FDA45F;
 }
 
 .video {
     position: relative;
-    top: 296px;
-    right: 22%;
+    top: 184px;
+    right: 38%;
     text-decoration: none;
     color: #FDA45F;
 }
 
 .virksomhed {
     position: relative;
-    top: 345px;
-    right: 47%;
+    top: 202px;
+    right: 10%;
     text-decoration: none;
     color: #FDA45F;
 }
 
+/* Close Button */
 .close {
     position: fixed;
     top: -25px;
@@ -752,6 +783,7 @@ img {
     color: #FEE1BB;
 }
 
+/* Tracklist - desktop */
 #tracklist {
     display: none;
 }
@@ -765,6 +797,12 @@ img {
 
     /********************* indledende sektion  ****************************/
 
+    /* Grid Container */
+    .grid-container {
+        margin-top: 618px;
+    }
+
+    /* Selvportræt */
     .image-container {
         position: relative;
         top: -185px;
@@ -777,6 +815,7 @@ img {
         height: auto;
     }
 
+    /* overskrift med linje og dato */
     .content-container {
         margin-bottom: 30%;
     }
@@ -803,12 +842,13 @@ img {
         left: 408px;
     }
 
+    /* General Knappe stil */
     .gen_knap1 {
         font-size: 1.9rem;
         cursor: pointer;
         position: relative;
-        top: -1149px;
-        left: 64%;
+        top: -1204px;
+        left: 63%;
         padding-right: 95px;
     }
 
@@ -816,8 +856,8 @@ img {
         font-size: 1.9rem;
         cursor: pointer;
         position: relative;
-        top: -1041px;
-        left: 39.3%;
+        top: -1111px;
+        left: 38.3%;
     }
 
     .gen_knap1 a,
@@ -825,16 +865,25 @@ img {
         color: #FEE1BB;
     }
 
+    .gen_knap1:hover,
+    .gen_knap2:hover {
+        background-color: #9C2E0E;
+    }
+
     /* Playliste + pop-up */
 
-    img[src="img/Artboard 43.svg"],
+    /* Hide Playlist and Pop-up elements */
+    img[src="img/forside/Artboard 43.svg"],
     .popup-button,
-    #tracklist {
+    #tracklist,
+    .popup,
+    .popup-content {
         display: none;
     }
 
+    /* Desktop Track, erstatter pop-up */
     .desktop_track {
-        background-image: url(/img/index_track.svg);
+        background-image: url(/img/forside/index_track.svg);
         background-size: contain;
         background-repeat: no-repeat;
         aspect-ratio: 1920/1080;
@@ -847,25 +896,14 @@ img {
         width: 85%;
     }
 
-    /* pop-up */
-    .popup-button {
-        display: none;
-    }
-
-    .popup {
-        display: none;
-    }
-
-    .popup-content {
-        display: none;
-    }
-
+    /* Track Titles, erstatter pop-up links */
     .track_titles {
         display: flex;
         flex-direction: column;
         position: relative;
         bottom: 1217px;
         left: 68%;
+        margin-bottom: -55%;
     }
 
     .track_titles a {
@@ -881,6 +919,7 @@ img {
         color: #FDA45F;
     }
 
+    /* Track Title Links */
     .ssp_web {
         position: relative;
         top: -2px;
@@ -919,8 +958,6 @@ img {
         top: 34px;
         right: 1%;
     }
-
-
 }
 
 
@@ -965,9 +1002,9 @@ img {
 .mememe p {
     font-size: 1rem;
     line-height: 1.6;
-    text-align: center;
-    margin-left: -6px;
-    margin-right: -6px;
+    text-align: left;
+    margin-left: 47px;
+    margin-right: 19px;
     font-family: lato;
     font-weight: 200;
 }
@@ -988,6 +1025,32 @@ img {
     margin-top: 2em;
 }
 
+.figur_trio {
+    width: 13%;
+    height: auto;
+    position: relative;
+    top: -795px;
+    left: 13%;
+}
+
+.figur_arrow {
+    width: 13%;
+    height: auto;
+    position: relative;
+    top: -824px;
+    left: 55%;
+    transform: scaleX(-1) scaleY(-1) rotate(-35deg);
+}
+
+.swirl {
+    width: 7%;
+    height: auto;
+    aspect-ratio: 63.89/67.83;
+    position: relative;
+    top: -605px;
+    left: 2%;
+}
+
 /********************** OM MIG - DESKTOP **************************************/
 @media only screen and (min-width: 800px) {
 
@@ -1005,7 +1068,7 @@ img {
     .selfie {
         grid-column: 1 / 2;
         position: relative;
-        top: -40px;
+        top: -103px;
         left: 31%;
     }
 
@@ -1036,8 +1099,34 @@ img {
 
     .skills {
         position: relative;
-        top: 1259px;
+        top: 1366px;
         left: 6%;
+    }
+
+    .figur_trio {
+        width: 13%;
+        height: auto;
+        position: relative;
+        top: -348px;
+        left: -85%;
+    }
+
+    .figur_arrow {
+        width: 25%;
+        height: auto;
+        position: relative;
+        top: -703px;
+        left: -52%;
+        transform: scaleX(-1) scaleY(-1) rotate(-63deg);
+    }
+
+    .swirl {
+        width: 9%;
+        height: auto;
+        aspect-ratio: 63.89/67.83;
+        position: relative;
+        top: -836px;
+        left: -126%;
     }
 }
 
@@ -1180,56 +1269,6 @@ img {
     left: 38%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
-}
-
-/* Caption text */
-.text2 {
-    color: #FEE1BB;
-    background-color: #4B1A04;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Lato';
-}
-
-/* Number text (1/3 etc) */
-.numbertext2 {
-    color: #4B1A04;
-    background-color: #FEE1BB;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    font-family: 'Lato';
-    font-weight: 700;
-}
-
-.dot-container2 {
-    display: flex;
-    justify-content: center;
-    /* Center the dots horizontally */
-    margin-top: 10px;
-    /* Adjust the margin as needed */
-}
-
-.dot2 {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    /* Adjust the margin as needed */
-    background-color: #FEE1BB;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot2:hover {
-    background-color: #CC5819;
 }
 
 /********************** GRUND UX - DESKTOP **************************************/
@@ -1485,7 +1524,6 @@ img {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 20px;
-    margin-top: 0px;
     margin-top: 221px;
 }
 
@@ -1523,6 +1561,24 @@ img {
     text-align: left;
 }
 
+.grid-item h3 {
+    text-align: left;
+    margin: 0 20px;
+}
+
+.grid-item p {
+    align-self: flex-start;
+    color: #FEE1BB;
+    font-family: 'Lato';
+    font-weight: 200;
+    background-color: #cc5819;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    margin-top: 20px;
+}
+
 .grid-item a {
     text-decoration: none;
     color: #000;
@@ -1533,11 +1589,6 @@ img {
     transition: background-color 0.3s ease;
     font-family: 'Lato';
     font-weight: 200;
-}
-
-
-.grid-item:first-child {
-    border-top: none;
 }
 
 .grid-item img {
@@ -1570,14 +1621,6 @@ img {
 
 }
 
-.grid-item p {
-    margin: 0 10px;
-    align-self: flex-start;
-    color: #FEE1BB;
-    font-family: 'Lato';
-    font-weight: 200;
-}
-
 .side-by-side {
     width: 40%;
     height: auto;
@@ -1593,112 +1636,6 @@ img {
     text-align: left;
     margin-left: 0;
     margin-bottom: 20px;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-    position: relative;
-    left: 10%;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: #FEE1BB;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* Caption text */
-.text {
-    color: #FEE1BB;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Lato';
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #4B1A04;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    font-family: 'Lato';
-    font-weight: 700;
-}
-
-/* The dots/bullets/indicators */
-/* The dots/circles container */
-.dot-container {
-    display: flex;
-    justify-content: center;
-    /* Center the dots horizontally */
-    margin-top: 10px;
-    /* Adjust the margin as needed */
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    margin-bottom: 10%;
-    background-color: #FEE1BB;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #CC5819;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
 }
 
 /********************** Proces - DESKTOP **************************************/
@@ -1724,10 +1661,6 @@ img {
     .grid-item a:hover {
         background-color: #9C2E0E;
         color: #FDA45F;
-    }
-
-    .grid-item {
-        margin-bottom: 10%;
     }
 }
 
@@ -1771,38 +1704,84 @@ img {
     margin: 52% 12%;
 }
 
-.text-section_ssp,
-.image-section {
-    width: 100%;
-    padding: 20px;
+.ind-div {
+    width: 1%;
     color: #FEE1BB;
     background-color: #CC5819;
     font-size: 14px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
-    margin-bottom: 20px;
+    margin-top: 938px;
+    height: 12%;
+    padding-bottom: 308px;
+    position: absolute;
+    left: 7%;
+    top: -70%;
+    padding-left: 335px;
 }
 
-.text-section_ssp h2,
-.image-section h2 {
+/* .ind-div2 {
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    color: black;
+    background-color: #EBDDCE;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    margin-bottom: 30px;
+    height: 33%;
+    padding-bottom: 28%;
+    position: absolute;
+    left: 54%;
+    top: 36%;
+    padding-left: 509px;
+}
+
+.ind-div3 {
+    padding: 20px;
+    color: black;
+    background-color: #EBDDCE;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    margin-bottom: 30px;
+    height: 33%;
+    padding-bottom: 84px;
+    position: absolute;
+    left: 54%;
+    top: 94%;
+    padding-left: 509px;
+} */
+
+.title_ssp {
+    position: absolute;
+    left: 20%;
+    top: 45%;
     font-size: 2rem;
-    margin-bottom: 10px;
     font-family: 'Indie flower';
+    color: #FEE1BB;
 }
 
-.text-section_ssp p,
-.image-section p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-family: 'Lato';
+.intro-text1 {
+    position: absolute;
+    right: 9%;
+    top: 54%;
+    font-size: 1rem;
+    font-family: 'lato';
     font-weight: 200;
 }
 
-.image-section img {
-    max-width: 100%;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px #180901;
+.link_site_ssp {
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: relative;
+    top: 527px;
+    left: 10%;
 }
 
 .logo_emne {
@@ -1892,6 +1871,113 @@ img {
     border-radius: 8px;
     box-shadow: 0 2px 4px #180901;
 }
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #FEE1BB;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #4B1A04;
+}
+
+/* Caption text */
+.text {
+    color: #FEE1BB;
+    background-color: #4B1A04;
+    font-size: 15px;
+    padding: 8px 0;
+    position: absolute;
+    bottom: 13px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Lato';
+    border-radius: 8px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #4B1A04;
+    background-color: #FEE1BB;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-family: 'Lato';
+    font-weight: 700;
+}
+
+/* The dots/bullets/indicators */
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    /* Center the dots horizontally */
+    margin-top: 10px;
+    /* Adjust the margin as needed */
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #FEE1BB;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 
 .text-section04,
 .image-section {
@@ -2046,25 +2132,52 @@ img {
         margin-bottom: -45%;
     }
 
-    .content {
-        flex-direction: row;
-        margin: 52% 2%;
+    .ind-div {
+        width: 40%;
+        font-size: 14px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px #180901;
+        margin-bottom: 30px;
+        height: 33%;
+        padding-bottom: 165px;
+        position: absolute;
+        left: 2%;
+        top: 36%;
+        padding-left: 33px;
     }
 
-    .text-section_ssp,
-    .image-section {
-        width: 50%;
+    .title_ssp {
+        position: absolute;
+        left: 16%;
+        top: 151%;
+        font-size: 2rem;
+        font-family: 'Indie flower';
+        color: #FEE1BB;
     }
 
-    .text-section_ssp {
-        margin-right: 20px;
+    .intro-text1 {
+        position: absolute;
+        right: 63%;
+        top: 157%;
+        font-size: 1.2rem;
+        font-family: 'lato';
+        font-weight: 200;
+    }
+
+    .link_site_ssp {
+        padding: 5px 35px;
+        background-color: transparent;
+        color: #FEE1BB;
+        border-radius: 30px;
+        border: #FEE1BB solid 2px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-family: 'Indie Flower';
         position: relative;
-        bottom: 501px;
+        top: 527px;
+        left: 10%;
     }
 
-    .image-section {
-        margin-left: 20px;
-    }
 
     .text-section_emne,
     .image-section {
@@ -2143,5 +2256,10 @@ img {
 
     .image-section {
         margin-left: 20px;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #9C2E0E;
     }
 }
