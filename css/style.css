@@ -1378,7 +1378,7 @@ img {
 
 .cover_img3 {
     position: relative;
-    top: 10px;
+    top: -96px;
     left: 50%;
 }
 
@@ -1392,7 +1392,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -244px;
+    top: -387px;
     left: 38%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
@@ -1415,7 +1415,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: 18px;
+    top: -36px;
     left: 12%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
@@ -1436,7 +1436,7 @@ img {
         margin-top: 42%;
     }
 
-    .image-grid img:hover {
+    .image-grid05 img:hover {
         transform: scale(1.1);
         /* Increase the scale of the image on hover */
     }
@@ -1444,7 +1444,7 @@ img {
     .cover_img3 {
         position: relative;
         top: 10px;
-        left: 50%;
+        left: 31%;
         height: auto;
         width: 100%;
     }
@@ -1452,7 +1452,7 @@ img {
     .cover_img4 {
         position: relative;
         top: 10px;
-        left: 50%;
+        left: 73%;
         height: auto;
         width: 96%;
     }
@@ -2754,7 +2754,7 @@ img {
 .slideshow-container_virk {
     position: absolute;
     width: 251px;
-    height: 351px;
+    height: 229px;
     margin: 0 auto;
     overflow: hidden;
     left: 19%;
@@ -2820,7 +2820,7 @@ img {
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
     height: 12%;
-    padding-bottom: 338px;
+    padding-bottom: 651px;
     position: relative;
     left: 13%;
     top: 1.5%;
@@ -3271,6 +3271,7 @@ img {
         top: -588px;
         left: 59%;
         width: 39%;
+        padding-bottom: 419px;
     }
 
     .title_virk3 {
