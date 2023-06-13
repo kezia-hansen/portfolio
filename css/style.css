@@ -2303,16 +2303,17 @@ img {
 .title_pitch3 {
     position: absolute;
     left: 35%;
-    top: 198%;
+    top: 183%;
     font-size: 2rem;
     font-family: 'Indie flower';
     color: #FEE1BB;
 }
 
+
 .pitch-text3 {
     position: absolute;
     left: 21%;
-    top: 208%;
+    top: 194%;
     font-size: 1rem;
     font-family: 'lato';
     font-weight: 200;
@@ -2757,43 +2758,48 @@ img {
 
 /* Slideshow container */
 .slideshow-container_virk {
-    max-width: 290px;
     position: absolute;
-    margin: auto;
-    left: 18%;
-    top: 780px;
+    width: 251px;
+    height: 351px;
+    margin: 0 auto;
+    overflow: hidden;
+    left: 19%;
+    top: 105%;
 }
 
-/* Hide the images by default */
-.mySlides {
+.slide {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-/* Next & previous buttons */
-#prev_virk,
-#next_virk {
-    cursor: pointer;
+.slider-btn {
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    color: #4B1A04;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #9C2E0E;
+    background-color: #fda35fc0;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-/* Position the "next button" to the right and prev to the left */
-#prev_virk {
-    left: -20px;
-    border-radius: 8px;
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-#next_virk {
-    right: -20px;
-    border-radius: 8px;
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
 }
 
 /* Fading animation */
@@ -3042,9 +3048,10 @@ img {
 
     /* Slideshow container */
     .slideshow-container_pitch {
-        max-width: 306px;
+        width: 225px;
         left: 11%;
-        top: 1746px;
+        top: 1715px;
+        height: 400px;
     }
 
     #prev_pitch,
@@ -3117,10 +3124,10 @@ img {
 
     /* Slideshow container */
     .slideshow-container_spil {
-        width: 280px;
+        width: 225px;
         left: 11%;
-        top: 1615px;
-        height: 42%;
+        top: 1613px;
+        height: 400px;
     }
 
     .spil-div3 {
@@ -3187,9 +3194,10 @@ img {
 
     /* Slideshow container */
     .slideshow-container_video {
-        max-width: 297px;
-        left: 9%;
-        top: 1619px;
+        width: 269px;
+        left: 11%;
+        top: 1613px;
+        height: 369px;
     }
 
     #prev_video,
@@ -3261,14 +3269,10 @@ img {
 
     /* Slideshow container */
     .slideshow-container_virk {
-        max-width: 296px;
-        left: 9%;
-        top: 1628px;
-    }
-
-    #prev_virk,
-    #next_virk {
-        color: #FEE1BB;
+        width: 326px;
+        left: 11%;
+        top: 1610px;
+        height: 239px;
     }
 
     .virk-div3 {
