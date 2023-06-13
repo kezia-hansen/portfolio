@@ -2,6 +2,7 @@
 <html lang="da">
 
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/fav_icon.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -96,7 +97,7 @@
                     <br>
                     <a href="https://pin.it/3woQpxv">Visuel reference</a>
                 </p>
-                <img id="moodboard" src="img/proces/Moodboard_horizontally.png" alt="Moodboard">
+                <img id="moodboard" src="img/proces/Moodboard_horizontally.webp" alt="Moodboard">
             </div>
 
         </div>
@@ -114,54 +115,42 @@
                 <br>
                 For at se nærmere på udviklingen kan du se følgende galleri:
             </p>
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <img class="img_gallery" src="img/proces/skitser_logo.png" alt="skitser">
-                    <div class="text">Brainstorm af mine logoer</div>
+            <div class="slideshow-container_krea">
+                <div class="slide fade">
+                    <img src="img/proces/skitser_logo.webp" alt="Process 1">
                 </div>
 
-                <div class="mySlides fade">
-                    <img class="img_gallery" src="img/proces/logo_process1.png" alt="reference">
-                    <div class="text">Reference til mit spil</div>
+                <div class="slide fade">
+                    <img src="img/proces/logo_process1.webp" alt="Process 2">
                 </div>
 
-                <div class="mySlides fade">
-                    <img class="img_gallery" src="img/proces/logo_process2.png" alt="reference">
-                    <div class="text">Original inspo fra Bratz</div>
+                <div class="slide fade">
+                    <img src="img/proces/logo_process2.webp" alt="Process 3">
+                </div>
+                <div class="slide fade">
+                    <img src="img/proces/logo_process3.webp" alt="Process 4">
+                </div>
+                <div class="slide fade">
+                    <img src="img/proces/logo_process4.webp" alt="Process 5">
+                </div>
+                <div class="slide fade">
+                    <img src="img/proces/logo_process5.webp" alt="Process 6">
                 </div>
 
-                <div class="mySlides fade">
-                    <img class="img_gallery" src="img/proces/logo_process3.png" alt="reference">
-                    <div class="text">Eksperimentere med farver</div>
+                <div class="slider-btn prev-btn" onclick="navigateSlider(-1)">&#10094;</div>
+                <div class="slider-btn next-btn" onclick="navigateSlider(1)">&#10095;</div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
-
-                <div class="mySlides fade">
-                    <img class="img_gallery" src="img/proces/logo_process4.png" alt="reference">
-                    <div class="text">Eksempel på brug af logo</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <img class="img_gallery" src="img/proces/logo_process5.png" alt="reference">
-                    <div class="text">Final version</div>
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a id="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <!-- The dots/circles -->
-            <div>
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
         </div>
 
@@ -169,7 +158,8 @@
         <div class="grid-item">
             <h3>Trin 3: Prototype</h3>
             <p> Dette er første udkast af min prototype, som jeg i store træk har fulgt. Jeg valgte at have et stort
-                hero image og en bølget footer til at passe til konceptet. Jeg har ændret eneklte ting udfra feedbacken
+                hero image og en bølget footer til at passe til konceptet. Jeg har ændret eneklte ting udfra
+                feedbacken
                 i mine tests.
                 <br>
                 <br>
@@ -177,7 +167,7 @@
             </p>
             <a href="https://xd.adobe.com/view/7eb5d477-ba6d-4ce7-af1b-8671578f594c-2be6/">Link til Prototype i
                 XD</a>
-            <img id="prototype" src="img/prototype.png" alt="prototype">
+            <img id="prototype" src="img/prototype.webp" alt="prototype">
         </div>
 
         <div class="grid-item">
@@ -233,19 +223,23 @@
     <footer class="footer">
         <div class="copy">&copy;2023 Kezia N. S. Hansen All Rights Reserved</div>
         <div class="icons">
-            <a href="https://www.facebook.com/kezia.hansen/">
-                <img class="si" src="img/facebook-app-symbol.png" alt="Facebook">
-            </a>
 
-            <a href="https://www.instagram.com/kezia_ns_hansen/">
-                <img class="si" src="img/instagram-2.png" alt="Instagram">
-            </a>
+            <img class="si" src="img/facebook-app-symbol.webp" alt="Facebook">
 
-            <a href="https://open.spotify.com/user/8mihibtfj8w4zpkroe8z46syu?si=e8a941ac8b494496">
-                <img class="si" src="img/twitter-2.png" alt="Spotify">
-            </a>
+
+            <img class="si" src="img/instagram-2.webp" alt="Instagram">
+
+
+            <img class="si" src="img/twitter-2.webp" alt="Twitter">
+
+        </div>
+        <div class="contact-info">
+            <p>Contact me:</p>
+            <p>kezia.hansen02@gmail.com</p>
+            <p>+45 28193926</p>
         </div>
     </footer>
+
     <script src="generel.js"></script>
 </body>
 

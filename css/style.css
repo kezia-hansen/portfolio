@@ -236,6 +236,7 @@ img {
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    pointer-events: none;
 }
 
 .icons {
@@ -1148,7 +1149,7 @@ img {
 
 .cover_img1 {
     position: relative;
-    top: 10px;
+    top: -71px;
     left: 50%;
 }
 
@@ -1162,8 +1163,8 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -256px;
-    left: 38%;
+    top: -361px;
+    left: 28%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
 }
@@ -1185,8 +1186,8 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: 18px;
-    left: 12%;
+    top: -40px;
+    left: -1%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
     margin-bottom: 17%;
@@ -1203,7 +1204,7 @@ img {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px;
-        margin-bottom: 40%;
+        margin-bottom: 17%;
         margin-top: 42%;
     }
 
@@ -1215,7 +1216,7 @@ img {
     .cover_img1 {
         position: relative;
         top: 10px;
-        left: 50%;
+        left: 31%;
         height: auto;
         width: 100%;
     }
@@ -1223,7 +1224,7 @@ img {
     .cover_img2 {
         position: relative;
         top: 10px;
-        left: 50%;
+        left: 73%;
         height: auto;
         width: 96%;
     }
@@ -1481,7 +1482,7 @@ img {
 
 .button-text {
     display: inline-block;
-    padding: 10px 20px;
+    width: 150px;
     background-color: transparent;
     color: #FEE1BB;
     font-size: 16px;
@@ -1493,6 +1494,7 @@ img {
     left: 12%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
+    padding: 10px 20px;
     margin-bottom: 17%;
 }
 
@@ -1504,6 +1506,11 @@ img {
         grid-gap: 40px;
         margin-bottom: 29%;
         margin-top: 30%;
+    }
+
+    .image-grid06 img {
+        width: 50%;
+        height: auto;
     }
 
     .image-grid06 img:hover {
@@ -1613,82 +1620,53 @@ img {
     margin-bottom: 30px;
 }
 
-.img_gallery {
-    position: relative;
-    left: 9%;
-}
 
 /* Global styles */
 * {
     box-sizing: border-box
 }
 
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
+.slideshow-container_krea {
+    width: 100%;
+    max-width: 265px;
+    height: 351px;
+    margin: 0 auto;
     position: relative;
-    margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
+.slide {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-/* Next & previous buttons */
-#prev,
-#next {
-    cursor: pointer;
+.slider-btn {
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -22px;
-    color: #FEE1BB;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right and prev to the left */
-#next {
-    right: 10px;
-    border-radius: 8px;
-}
-
-#prev {
-    left: 10px;
-    border-radius: 8px;
-}
-
-/* Caption text */
-.text {
-    color: #FEE1BB;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Indie flower';
-}
-
-/* The dots/bullets/indicators */
-.dot {
+    transform: translateY(-50%);
+    font-size: 24px;
     cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #FEE1BB;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+    color: #9C2E0E;
+    background-color: #fda35fc0;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.active,
-.dot:hover {
-    background-color: #FDA45F;
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
 }
 
 /* Fading animation */
@@ -1903,6 +1881,22 @@ img {
     right: 20px;
 }
 
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #FDA45F;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #9C2E0E;
+}
+
 /* Fading animation */
 .fade {
     animation-name: fade;
@@ -1927,7 +1921,7 @@ img {
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
     height: 12%;
-    padding-bottom: 338px;
+    padding-bottom: 551px;
     position: relative;
     left: 13%;
     top: 1.5%;
@@ -2104,7 +2098,7 @@ img {
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
     height: 12%;
-    padding-bottom: 338px;
+    padding-bottom: 528px;
     position: relative;
     left: 13%;
     top: 1.5%;
@@ -2982,6 +2976,7 @@ img {
         left: 59%;
         width: 39%;
         margin-bottom: 41%;
+        padding-bottom: 322px;
     }
 
     .title_emne3 {
