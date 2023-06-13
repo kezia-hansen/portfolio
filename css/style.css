@@ -624,7 +624,6 @@ img {
     margin-top: 16px;
     font-family: 'Indie Flower';
     font-size: 0.9rem;
-
 }
 
 .gen_knap1 {
@@ -1779,28 +1778,6 @@ img {
 
 
 /********************** PROJEKT - MOBIL **************************************/
-.track_04 {
-    margin-top: 45%;
-    margin-bottom: -45%;
-}
-
-.track_06 {
-    margin-top: 45%;
-    margin-bottom: -45%;
-}
-
-.track_05 {
-    margin-top: 45%;
-    margin-bottom: -45%;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 52% 12%;
-}
-
 /* STUDIESTARTSPRØVEN */
 .track_01 {
     margin-top: 29%;
@@ -2329,85 +2306,523 @@ img {
 }
 
 /* ANIMATION */
+.track_04 {
+    margin-top: 29%;
+}
 
-.text-section05,
-.image-section {
-    width: 100%;
-    padding: 20px;
+.spil-div {
+    width: 1%;
     color: #FEE1BB;
     background-color: #CC5819;
     font-size: 14px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
-    margin-bottom: 20px;
+    height: 12%;
+    padding-bottom: 412px;
+    position: relative;
+    left: 13%;
+    top: 13.5%;
+    padding-left: 335px;
+    margin-top: 24px;
 }
 
-.text-section05 h2,
-.image-section h2 {
+
+.title_spil {
+    position: absolute;
+    left: 27%;
+    bottom: 39%;
     font-size: 2rem;
-    margin-bottom: 10px;
     font-family: 'Indie flower';
+    color: #FEE1BB;
 }
 
-.text-section05 p,
-.image-section p {
-    font-size: 18px;
-    font-family: 'Lato';
+.spil-text1 {
+    position: absolute;
+    left: 22%;
+    top: 56%;
+    font-size: 1rem;
+    font-family: 'lato';
     font-weight: 200;
+    padding-right: 14%;
 }
 
-.text-section05 ul {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-family: 'Lato';
-    font-weight: 200;
+.link_site_spil {
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: absolute;
+    top: 251px;
+    left: 6%;
 }
 
-.image-section img {
-    max-width: 100%;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px #180901;
-}
-
-.text-section06,
-.image-section {
-    width: 100%;
-    padding: 20px;
+.spil-div2 {
+    width: 1%;
     color: #FEE1BB;
     background-color: #CC5819;
     font-size: 14px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
-    margin-bottom: 20px;
+    height: 12%;
+    padding-bottom: 389px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
 }
 
-.text-section06 h2,
-.image-section h2 {
+.title_spil_2 {
+    position: absolute;
+    left: 40%;
+    top: 108%;
     font-size: 2rem;
-    margin-bottom: 10px;
     font-family: 'Indie flower';
+    color: #FEE1BB;
 }
 
-.text-section06 p,
-.image-section p {
+/* Slideshow container */
+.slideshow-container_spil {
+    max-width: 290px;
+    position: absolute;
+    margin: auto;
+    left: 18%;
+    top: 869px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+#prev_spil,
+#next_spil {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: #4B1A04;
+    font-weight: bold;
     font-size: 18px;
-    font-family: 'Lato';
-    font-weight: 200;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.text-section06 ul {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-family: 'Lato';
-    font-weight: 200;
-}
-
-.image-section img {
-    max-width: 100%;
-    margin-bottom: 10px;
+/* Position the "next button" to the right and prev to the left */
+#prev_spil {
+    left: -20px;
     border-radius: 8px;
+}
+
+#next_spil {
+    right: -20px;
+    border-radius: 8px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.spil-div3 {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 338px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
+    margin-bottom: 115px;
+}
+
+.title_spil3 {
+    position: absolute;
+    left: 35%;
+    top: 164%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+.spil-text3 {
+    position: absolute;
+    left: 21%;
+    top: 174%;
+    font-size: 1rem;
+    font-family: 'lato';
+    font-weight: 200;
+    padding-right: 20%;
+}
+
+/* VIDEOSITE */
+.track_05 {
+    margin-top: 29%;
+}
+
+.video-div {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 338px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 24px;
+}
+
+
+.title_video {
+    position: absolute;
+    left: 27%;
+    bottom: 39%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+.video-text1 {
+    position: absolute;
+    left: 16%;
+    top: 54%;
+    font-size: 1rem;
+    font-family: 'lato';
+    font-weight: 200;
+    padding-right: 20%;
+}
+
+.link_site_video {
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: absolute;
+    top: 226px;
+    left: -1%;
+}
+
+.video-div2 {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 427px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
+}
+
+.title_video_2 {
+    position: absolute;
+    left: 40%;
+    top: 97%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+/* Slideshow container */
+.slideshow-container_video {
+    max-width: 290px;
+    position: absolute;
+    margin: auto;
+    left: 18%;
+    top: 780px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+#prev_video,
+#next_video {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: #4B1A04;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right and prev to the left */
+#prev_video {
+    left: -20px;
+    border-radius: 8px;
+}
+
+#next_video {
+    right: -20px;
+    border-radius: 8px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.video-div3 {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 338px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
+    margin-bottom: 115px;
+}
+
+.title_video3 {
+    position: absolute;
+    left: 35%;
+    top: 159%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+.video-text3 {
+    position: absolute;
+    left: 21%;
+    top: 169%;
+    font-size: 1rem;
+    font-family: 'lato';
+    font-weight: 200;
+    padding-right: 20%;
+    margin-bottom: 100px;
+}
+
+/* VIRKSOMHEDSSITE */
+.track_06 {
+    margin-top: 29%;
+}
+
+.virk-div {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 338px;
+    position: relative;
+    left: 13%;
+    top: -20.5%;
+    padding-left: 335px;
+    margin-top: 25px;
+}
+
+.title_virk {
+    position: absolute;
+    left: 27%;
+    bottom: 39%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+.virk-text1 {
+    position: absolute;
+    left: 16%;
+    top: 54%;
+    font-size: 1rem;
+    font-family: 'lato';
+    font-weight: 200;
+    padding-right: 20%;
+}
+
+.link_site_virk {
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: absolute;
+    top: 226px;
+    left: -1%;
+}
+
+.virk-div2 {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 252px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
+}
+
+.title_virk_2 {
+    position: absolute;
+    left: 40%;
+    top: 97%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+/* Slideshow container */
+.slideshow-container_virk {
+    max-width: 290px;
+    position: absolute;
+    margin: auto;
+    left: 18%;
+    top: 780px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+#prev_virk,
+#next_virk {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: #4B1A04;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right and prev to the left */
+#prev_virk {
+    left: -20px;
+    border-radius: 8px;
+}
+
+#next_virk {
+    right: -20px;
+    border-radius: 8px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.virk-div3 {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 338px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
+    margin-bottom: 115px;
+}
+
+.title_virk3 {
+    position: absolute;
+    left: 35%;
+    top: 134%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+.virk-text3 {
+    position: absolute;
+    left: 21%;
+    top: 145%;
+    font-size: 1rem;
+    font-family: 'lato';
+    font-weight: 200;
+    padding-right: 20%;
+    margin-bottom: 100px;
 }
 
 /********************** PROJEKT - DESKTOP **************************************/
@@ -2643,94 +3058,223 @@ img {
     }
 
     /* ANIMATION */
-
-
-
-
-
-
-
-
     .track_04 {
         margin-top: 39%;
-        margin-bottom: -46%;
     }
 
+    .spil-div {
+        top: 70px;
+        left: 2%;
+        width: 39%;
+        padding-bottom: 346px;
+    }
+
+    .title_spil {
+        left: 4%;
+        bottom: -55%;
+    }
+
+    .spil-text1 {
+        left: 4%;
+        top: 150%;
+        padding-right: 62%;
+    }
+
+    .link_site_spil {
+        top: 169px;
+        left: 0%;
+        font-size: 2rem;
+    }
+
+    .link_site_spil:hover {
+        background-color: #9C2E0E;
+    }
+
+    .spil-div2 {
+        top: 91px;
+        left: 2%;
+        width: 39%;
+    }
+
+    .title_spil_2 {
+        left: 5%;
+        top: 190%;
+    }
+
+    /* Slideshow container */
+    .slideshow-container_spil {
+        max-width: 330px;
+        left: 9%;
+        top: 1649px;
+    }
+
+    #prev_spil,
+    #next_spil {
+        color: #FEE1BB;
+    }
+
+    .spil-div3 {
+        top: -723px;
+        left: 59%;
+        width: 39%;
+    }
+
+    .title_spil3 {
+        left: 61%;
+        top: 142%;
+    }
+
+    .spil-text3 {
+        left: 61%;
+        top: 151%;
+        padding-right: 3%;
+    }
+
+    /* VIDEOSITE */
 
     .track_05 {
-        margin-top: 39%;
-        margin-bottom: -45%;
+        margin-top: 41%;
     }
+
+    .video-div {
+        top: 33px;
+        left: 2%;
+        width: 39%;
+        padding-bottom: 346px;
+    }
+
+    .title_video {
+        left: 4%;
+        bottom: -55%;
+    }
+
+    .video-text1 {
+        left: 4%;
+        top: 150%;
+        padding-right: 62%;
+    }
+
+    .link_site_video {
+        top: 169px;
+        left: 0%;
+        font-size: 2rem;
+    }
+
+    .link_site_video:hover {
+        background-color: #9C2E0E;
+    }
+
+    .video-div2 {
+        top: 48px;
+        left: 2%;
+        width: 39%;
+    }
+
+    .title_video_2 {
+        left: 5%;
+        top: 190%;
+    }
+
+    /* Slideshow container */
+    .slideshow-container_video {
+        max-width: 297px;
+        left: 9%;
+        top: 1619px;
+    }
+
+    #prev_video,
+    #next_video {
+        color: #FEE1BB;
+    }
+
+    .video-div3 {
+        top: -789px;
+        left: 59%;
+        width: 39%;
+    }
+
+    .title_video3 {
+        left: 61%;
+        top: 142%;
+    }
+
+    .video-text3 {
+        left: 61%;
+        top: 151%;
+        padding-right: 3%;
+    }
+
+    /* VIRKSOMHEDSSITE */
 
     .track_06 {
         margin-top: 39%;
-        margin-bottom: -45%;
     }
 
-
-    .image-section {
-        margin-left: 20px;
+    .virk-div {
+        top: 59px;
+        left: 2%;
+        width: 39%;
+        padding-bottom: 346px;
     }
 
-    .text-section_emne,
-    .image-section {
-        width: 50%;
+    .title_virk {
+        left: 4%;
+        bottom: -55%;
     }
 
-    .text-section03 {
-        margin-right: 20px;
-        position: relative;
-        bottom: 967px;
+    .virk-text1 {
+        left: 4%;
+        top: 150%;
+        padding-right: 62%;
     }
 
-    .image-section {
-        margin-left: 20px;
+    .link_site_virk {
+        top: 169px;
+        left: 0%;
+        font-size: 2rem;
     }
 
-
-    .text-section04,
-    .image-section {
-        width: 50%;
+    .link_site_virk:hover {
+        background-color: #9C2E0E;
     }
 
-    .text-section04 {
-        margin-right: 20px;
-        position: relative;
-        bottom: 864px;
+    .virk-div2 {
+        top: 85px;
+        left: 2%;
+        width: 39%;
     }
 
-    .image-section {
-        margin-left: 20px;
+    .title_virk_2 {
+        left: 5%;
+        top: 190%;
     }
 
-    .text-section05,
-    .image-section {
-        width: 50%;
+    /* Slideshow container */
+    .slideshow-container_virk {
+        max-width: 296px;
+        left: 9%;
+        top: 1628px;
     }
 
-    .text-section05 {
-        margin-right: 20px;
-        position: relative;
-        bottom: 529px;
+    #prev_virk,
+    #next_virk {
+        color: #FEE1BB;
     }
 
-    .image-section {
-        margin-left: 20px;
+    .virk-div3 {
+        top: -588px;
+        left: 59%;
+        width: 39%;
     }
 
-
-    .text-section06,
-    .image-section {
-        width: 50%;
+    .title_virk3 {
+        left: 61%;
+        top: 142%;
     }
 
-    .text-section06 {
-        margin-right: 20px;
-        position: relative;
-        bottom: 408px;
-    }
-
-    .image-section {
-        margin-left: 20px;
+    .virk-text3 {
+        left: 61%;
+        top: 151%;
+        padding-right: 3%;
     }
 }

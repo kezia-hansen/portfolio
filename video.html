@@ -2,6 +2,7 @@
 <html lang="da">
 
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/fav_icon.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,31 +58,57 @@
 
         <img class="track_05" src="img/track_05.svg" alt="track_05">
 
-        <div class="content">
-            <div class="text-section05">
-                <h2>About the track</h2>
-                <p>I dette forløb blev vi introduceret til videoredigering og fik arbejdet med programet Premiere pro,
-                    hvor vi lagde ud med at skulle i par filme en person med passion og derefter enkeltvis producere en
-                    video samt tilhørende site dvs. jeg lærte at lægge en video op på en hjemmeside samt storyboard.
-                    <br>
-                    <br>
-                    <a class="link_site" href="https://kezia-hansen.github.io/videosite/index.html">Link til
-                        Videosite</a>
-                </p>
-            </div>
-            <div class="image-section">
-                <h2>My Process</h2>
-                <p>Jeg valgte af bruge creme/brunlige farver samt en tekstur baggrund som matchede med personens passion
-                    heraf hækling. Vi skulle vedhæfte videorne både via youtube-link og med video tagget derudoverhar
-                    jeg framet alle elementer med en stiplet linj i brun for at imitere sygninger </p>
+        <div>
+            <div class="video-div"></div>
+            <div class="video-div2"></div>
+            <div class="video-div3"></div>
+        </div>
+        <h2 class="title_video">About the track</h2>
+        <p class="video-text1">
+            I dette forløb blev vi introduceret til videoredigering og fik arbejdet med programet Premiere pro,
+            hvor vi lagde ud med at skulle i par filme en person med passion og derefter enkeltvis producere en
+            video samt tilhørende site dvs. jeg lærte at lægge en video op på en hjemmeside samt storyboard.
+            <br>
+            <br>
+            <a class="link_site_video" href="https://kezia-hansen.github.io/videosite/index.html">Link til
+                Videosite</a>
+        </p>
+
+        <h2 class="title_video_2">Galleri</h2>
+
+        <div class="slideshow-container_video">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
                 <img src="img/videoF.png" alt="Process 1">
-                <p>Vi skulle også tage billeder, som skulle præsenteres på hjemmesiden og der valgte jeg at bruge grid
-                    som også har den stiplede brune linje for at have et gennemgående tema. Vi skulle også behandle
-                    billederne.
-                </p>
+                <div class="text">Forside</div>
+            </div>
+
+            <div class="mySlides fade">
                 <img src="img/video_grid.png" alt="Process 2">
+                <div class="text">Grid - galleri</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a id="prev_ssp" onclick="plusSlides(-1)">&#10094;</a>
+            <a id="next_ssp" onclick="plusSlides(1)">&#10095;</a>
+
+            <br>
+
+            <!-- The dots/circles -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
             </div>
         </div>
+
+        <h2 class="title_video3">My proces</h2>
+        <p class="video-text3">
+            Vi modtog en guide, som viste HTML opsætningen samt tekst-indholdet, så alle havde samme grundstruktur dog
+            var design-delen op til den enkelte. Jeg gik med et lilla/lyserød koncept med en blomst som logo (og den
+            førte tilbage til forsiden). Derudover skulle sitet både være responsiv i både mobil og desktop. Vi skulle
+            også lave et grid, hvor jeg valgte at frame billederne i en lyserød ramme for at passe bedre til konceptet.
+        </p>
 
     </main>
     <footer class="footer">
@@ -98,6 +125,11 @@
             <a href="https://open.spotify.com/user/8mihibtfj8w4zpkroe8z46syu?si=e8a941ac8b494496">
                 <img class="si" src="img/twitter-2.png" alt="Spotify">
             </a>
+        </div>
+        <div class="contact-info">
+            <p>Contact me:</p>
+            <p>kezia.hansen02@gmail.com</p>
+            <p>+45 28193926</p>
         </div>
     </footer>
     <script src="generel.js"></script>

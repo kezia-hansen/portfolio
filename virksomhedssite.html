@@ -2,6 +2,7 @@
 <html lang="da">
 
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/fav_icon.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,41 +59,65 @@
 
         <img class="track_06" src="img/track_06.svg" alt="track_06">
 
-        <div class="content">
-            <div class="text-section06">
-                <h2>About the track</h2>
-                <p>
-                    I dette forløb begyndte vi på det første "officielle" gruppearbejde, hvor vi skulle kontakte en
-                    virksomhed og redesigne
-                    deres hjemmeside. Formålet var at implementere det vi havde lært på de tidligere forløb samt kode i
-                    grupper via github. Vi arbejde med Trello for at opretholde orden samt holdte SCRUM-møder.
-                    <br>
-                    <br>
-                    <a class="link_site" href="https://eclectic-kheer-f1b185.netlify.app/">Link til
-                        Virksomhedssite</a>
-                </p>
-            </div>
-            <div class="image-section">
-                <h2>My Process</h2>
-                <p> Min gruppe valgte at arbejde med Alive Festival, da vi syntes deres grundlæggende koncept var
-                    interessant men hjemmesiden kunne finpudses. Alive Festivalen er primært rettet mod unge voksne i
-                    alderen 18-30 år som er typisk musikinteresserede mennesker, der
-                    er åbne for nye musikoplevelser og festivaloplevelser. De er inspireret af hippie-kulturen og dens
-                    fokus på frihed, kreativitet og
-                    samfundsfællesskab. Med dette udgangspunkt samt deres design guide + fælles brainstorm havde vi et
-                    klar konceopt i tanke.</p>
+        <div>
+            <div class="virk-div"></div>
+            <div class="virk-div2"></div>
+            <div class="virk-div3"></div>
+        </div>
+        <h2 class="title_virk">About the track</h2>
+        <p class="virk-text1">
+            Til Studiestartsprøven blev vi introduceret HTML og CSS. Jeg lærte at opsætte et HTML dokument udfra et
+            layout diagram samt wireframe (begge udleveret af læren). De forslog metoden "mobile first", som vores
+            tilgang til opsætning af design, da det var nemmere at starte fra småt til stort (responsivt design). Dette
+            blev gjort via css grid, flex og media queries. Jeg blev også bekendt med filezilla og VSCmed diverse
+            plugins.
+            <br>
+            <br>
+            <a class="link_site_virk" href="https://eclectic-kheer-f1b185.netlify.app/">Link til
+                Virksomhedssite</a>
+        </p>
+
+        <h2 class="title_virk_2">Galleri</h2>
+
+        <div class="slideshow-container_virk">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
                 <img src="img/Artboard 88.png" alt="Process 1">
-                <p>Vi holdte hinanden opdaterede via Trello, Teams og et fælles google docs samt messenger gruppe. Vi
-                    uddelte en side hver gruppemedlem også stod man for kodningen derudover uddelte vi også opgaver ift.
-                    udfyldelsen af dokumentet, video-optagning, moodboard osv. så alle havde en finger med i spillet.
-                </p>
+                <div class="text">Moodboard + Style tile</div>
+            </div>
+
+            <div class="mySlides fade">
                 <img src="img/comm.png" alt="Process 2">
-                <p>Jeg stod for "Om Alive" siden, hvor jeg benyttede mig af grid og position. Jeg fik også implementeret
-                    både et galleri og pop-up for førsrte gang vha. WS3 også tilrettet jeg koden og designet.
-                </p>
+                <div class="text">Samarbejde</div>
+            </div>
+
+            <div class="mySlides fade">
                 <img src="img/omalive.png" alt="Process 3">
+                <div class="text">Slideshow + pop-up</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a id="prev_virk" onclick="plusSlides(-1)">&#10094;</a>
+            <a id="next_virk" onclick="plusSlides(1)">&#10095;</a>
+
+            <br>
+
+            <!-- The dots/circles -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
+
+        <h2 class="title_virk3">My proces</h2>
+        <p class="virk-text3">
+            Vi modtog en guide, som viste HTML opsætningen samt tekst-indholdet, så alle havde samme grundstruktur dog
+            var design-delen op til den enkelte. Jeg gik med et lilla/lyserød koncept med en blomst som logo (og den
+            førte tilbage til forsiden). Derudover skulle sitet både være responsiv i både mobil og desktop. Vi skulle
+            også lave et grid, hvor jeg valgte at frame billederne i en lyserød ramme for at passe bedre til konceptet.
+        </p>
 
     </main>
     <footer class="footer">
@@ -109,6 +134,11 @@
             <a href="https://open.spotify.com/user/8mihibtfj8w4zpkroe8z46syu?si=e8a941ac8b494496">
                 <img class="si" src="img/twitter-2.png" alt="Spotify">
             </a>
+        </div>
+        <div class="contact-info">
+            <p>Contact me:</p>
+            <p>kezia.hansen02@gmail.com</p>
+            <p>+45 28193926</p>
         </div>
     </footer>
     <script src="generel.js"></script>
