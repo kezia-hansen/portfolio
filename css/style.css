@@ -1252,7 +1252,7 @@ img {
 
 .solo_img03 {
     position: relative;
-    top: 10px;
+    top: -120px;
     left: 50%;
 }
 
@@ -1266,7 +1266,7 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -238px;
+    top: -488px;
     left: 38%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
@@ -1314,7 +1314,7 @@ img {
 
 .solo_img04 {
     position: relative;
-    top: 10px;
+    top: -78px;
     left: 50%;
 }
 
@@ -1328,8 +1328,8 @@ img {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    top: -238px;
-    left: 38%;
+    top: -415px;
+    left: 33%;
     border: 2px #FEE1BB solid;
     border-radius: 30px;
 }
@@ -2285,7 +2285,7 @@ img {
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
     height: 12%;
-    padding-bottom: 338px;
+    padding-bottom: 739px;
     position: relative;
     left: 13%;
     top: 1.5%;
@@ -2464,7 +2464,7 @@ img {
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
     height: 12%;
-    padding-bottom: 338px;
+    padding-bottom: 437px;
     position: relative;
     left: 13%;
     top: 1.5%;
@@ -3049,16 +3049,13 @@ img {
         height: 400px;
     }
 
-    #prev_pitch,
-    #next_pitch {
-        color: #FEE1BB;
-    }
 
     .pitch-div3 {
         top: -241px;
         left: 59%;
         width: 39%;
         margin-bottom: 41%;
+        padding-bottom: 419px;
     }
 
     .title_pitch3 {
