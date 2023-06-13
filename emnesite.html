@@ -2,6 +2,7 @@
 <html lang="da">
 
 <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/fav_icon.svg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,57 +56,77 @@
             </div>
         </div>
         <img class="track_02" src="img/track_02.svg" alt="track_02">
-        <div class="content">
-            <div class="text-section_emne">
-                <h2>About the track</h2>
-                <p>Til Emnesite skulle vi bygge videre på studiestartsprøvens læringsmål, hvor vi blev introduceret til
-                    opstilling af moodboard og style tile, da vi selv skulle designe denne hjemmeside udfra egen valg.
-                    Her fik jeg også prøvede krafter af med egne wireframes og layoutdiagram. Vi fik også tilddelt en
-                    burgermenu som jeg selv stylede og implementere via javascript.
-                    <br>
-                    <br>
-                    <a class="link_site" href="https://keziahansen.dk/kea/02_web/02_emnesite/emnesite/">Link til
-                        Emnesite</a>
-                </p>
-            </div>
-            <div class="image-section">
-                <h2>My Process</h2>
-                <p>Valgte stilart: Retro
-                    <br>
-                    <br>
-                    Emne: Sports Anime
-                    <br>
-                    <br>
-                    Jeg valgte retro stilarten ud af valgmulighederne og var hurtig ovre på noget anime relateret. Jeg
-                    gad ikke tage en åbenlys retning, så jeg begyndte at brainstorme og da jeg også er stor sportsfan,
-                    så kom ideen retro magazine X sports anime til mig. Det gav mig meget kreativ frirum til at lege med
-                    tekstur, farver og opsætning.
-                </p>
-                <img src="img/emnesite/Retro-moodboard.jpg" alt="Process 1">
-                <img src="img/emnesite/styletile.png" alt="Process 2">
-                <p>Her vises min wireframe, som skal afspejle et magasin, så jeg lagde vægt på billeder over tekst og
-                    har derfor også behandlet mine egne billeder. Billede-stilen kendetegnes ved brugen af et varmt
-                    ”vintage” filter hen over alle billederne samt et grainy filter for at
-                    fange retro følelsen. Dette spiller godt ind med farverne og følelsen af retro på hjemmesiden. Alle
-                    billederne er taget, hvor karaktererne interagere med deres sportsgren.
 
-                    <br>
-                    <br>
-                    På mit website er der benyttet to gestalt love: Loven om kontinuitet og Loven om lukkethed. Disse to
-                    love samarbejder
-                    med at kreere relation til elementerne vha. dannelse af linjer og ”indramning”
-                </p>
-                <img src="img/emnesite/wireframe.png" alt="Process 3">
+        <div>
+            <div class="emne-div"></div>
+            <div class="emne-div2"></div>
+            <div class="emne-div3"></div>
+        </div>
+        <h2 class="title_emne">About the track</h2>
+        <p class="emne-text1">
+            Til Emnesite skulle vi bygge videre på studiestartsprøvens læringsmål, hvor vi blev introduceret til
+            opstilling af moodboard og style tile, da vi selv skulle designe denne hjemmeside udfra egen valg.
+            Her fik jeg også prøvede krafter af med egne wireframes og layoutdiagram. Vi fik også tilddelt en
+            burgermenu som jeg selv stylede og implementere via javascript.
+            <br>
+            <br>
+            <a class="link_site_emne" href="https://keziahansen.dk/kea/02_web/02_emnesite/emnesite/index.html">Link til
+                Emnesite</a>
+        </p>
+
+        <h2 class="title_emne_2">Galleri</h2>
+
+        <div class="slideshow-container_emne">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="img/emnesite/Retro-moodboard.jpg" alt="Process 1">
+                <div class="text">Moodboard</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/emnesite/styletile.png" alt="Process 2">
+                <div class="text">Style tile</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="img/emnesite/wireframe.svg" alt="Process 3">
+                <div class="text">Wireframe</div>
+            </div>
+
+            <div class="mySlides fade">
                 <img src="img/emnesite/kort_emne.png" alt="Process 4">
-                <img src="img/emnesite/billede_emne.png" alt="Process 5">
-                <br>
-                <br>
-                <p>Mit logo (se styletile) er tegnet i samme farve-pallet som jeg har brugt til websitet og imitierer et
-                    old school sports logo.</p>
+                <div class="text">Lavet i illustrator</div>
+            </div>
+
+            <div class="mySlides fade">
                 <img class="logo_emne" src="img/emnesite/logo-versions_Logo.svg" alt="Process 5">
+                <div class="text">Endelige logo</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a id="prev_ssp" onclick="plusSlides(-1)">&#10094;</a>
+            <a id="next_ssp" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+
+            <!-- The dots/circles -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
             </div>
         </div>
 
+        <h2 class="title_emne3">My proces</h2>
+        <p class="emne-text3">
+            Vi modtog en guide, som viste HTML opsætningen samt tekst-indholdet, så alle havde samme grundstruktur dog
+            var design-delen op til den enkelte. Jeg gik med et lilla/lyserød koncept med en blomst som logo (og den
+            førte tilbage til forsiden). Derudover skulle sitet både være responsiv i både mobil og desktop. Vi skulle
+            også lave et grid, hvor jeg valgte at frame billederne i en lyserød ramme for at passe bedre til konceptet.
+        </p>
     </main>
     <footer class="footer">
         <div class="copy">&copy;2023 Kezia N. S. Hansen All Rights Reserved</div>
@@ -121,6 +142,12 @@
             <a href="https://open.spotify.com/user/8mihibtfj8w4zpkroe8z46syu?si=e8a941ac8b494496">
                 <img class="si" src="img/twitter-2.png" alt="Spotify">
             </a>
+        </div>
+
+        <div class="contact-info">
+            <p>Contact me:</p>
+            <p>kezia.hansen02@gmail.com</p>
+            <p>+45 28193926</p>
         </div>
     </footer>
     <script src="generel.js"></script>

@@ -1779,17 +1779,6 @@ img {
 
 
 /********************** PROJEKT - MOBIL **************************************/
-
-.track_02 {
-    margin-top: 39%;
-    margin-bottom: -47%;
-}
-
-.track_03 {
-    margin-top: 45%;
-    margin-bottom: -43%;
-}
-
 .track_04 {
     margin-top: 45%;
     margin-bottom: -45%;
@@ -1974,7 +1963,6 @@ img {
     color: #FEE1BB;
 }
 
-
 .ssp-text3 {
     position: absolute;
     left: 21%;
@@ -1986,134 +1974,361 @@ img {
     margin-bottom: 100px;
 }
 
-.logo_emne {
-    width: 45%;
-    height: auto;
+/* EMNESITE */
+.track_02 {
+    margin-top: 29%;
+}
+
+.emne-div {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 338px;
     position: relative;
-    left: 29%;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
 }
 
-.text-section_emne,
-.image-section {
-    width: 100%;
-    padding: 20px;
+.title_emne {
+    position: absolute;
+    left: 27%;
+    bottom: 39%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+.emne-text1 {
+    position: absolute;
+    left: 22%;
+    top: 56%;
+    font-size: 1rem;
+    font-family: 'lato';
+    font-weight: 200;
+    padding-right: 14%;
+}
+
+.link_site_emne {
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: absolute;
+    top: 196px;
+    left: 9%;
+}
+
+.emne-div2 {
+    width: 1%;
     color: #FEE1BB;
     background-color: #CC5819;
     font-size: 14px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
-    margin-bottom: 20px;
-}
-
-.text-section_emne h2,
-.image-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-family: 'Indie flower';
-}
-
-.text-section_emne p,
-.image-section p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-family: 'Lato';
-    font-weight: 200;
-}
-
-.image-section img {
-    max-width: 100%;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px #180901;
-}
-
-.logo_emne {
-    width: 45%;
-    height: auto;
+    height: 12%;
+    padding-bottom: 338px;
     position: relative;
-    left: 29%;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
 }
 
-.text-section03,
-.image-section {
-    width: 100%;
-    padding: 20px;
+.title_emne_2 {
+    position: absolute;
+    left: 40%;
+    top: 97%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+/* Slideshow container */
+.slideshow-container_emne {
+    max-width: 290px;
+    position: absolute;
+    margin: auto;
+    left: 18%;
+    top: 780px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+#prev_ssp,
+#next_ssp {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: #4B1A04;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right and prev to the left */
+#prev_emne {
+    left: -20px;
+    border-radius: 8px;
+}
+
+#next_emnes {
+    right: -20px;
+    border-radius: 8px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.emne-div3 {
+    width: 1%;
     color: #FEE1BB;
     background-color: #CC5819;
     font-size: 14px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
-    margin-bottom: 20px;
+    height: 12%;
+    padding-bottom: 338px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
+    margin-bottom: 115px;
 }
 
-.text-section03 h2,
-.image-section h2 {
+.title_emne3 {
+    position: absolute;
+    left: 35%;
+    top: 149%;
     font-size: 2rem;
-    margin-bottom: 10px;
     font-family: 'Indie flower';
+    color: #FEE1BB;
 }
 
-.text-section03 p,
-.image-section p {
-    font-size: 18px;
-    font-family: 'Lato';
+.emne-text3 {
+    position: absolute;
+    left: 21%;
+    top: 159%;
+    font-size: 1rem;
+    font-family: 'lato';
     font-weight: 200;
+    padding-right: 20%;
+    margin-bottom: 100px;
 }
 
-.text-section03 ul {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-family: 'Lato';
-    font-weight: 200;
+/* PITCH */
+.track_03 {
+    margin-top: 29%;
 }
 
-.image-section img {
-    max-width: 100%;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px #180901;
-}
-
-
-.text-section04,
-.image-section {
-    width: 100%;
-    padding: 20px;
+.pitch-div {
+    width: 1%;
     color: #FEE1BB;
     background-color: #CC5819;
     font-size: 14px;
     border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
-    margin-bottom: 20px;
+    height: 12%;
+    padding-bottom: 530px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
 }
 
-.text-section04 h2,
-.image-section h2 {
+.title_pitch {
+    position: absolute;
+    left: 27%;
+    bottom: 39%;
     font-size: 2rem;
-    margin-bottom: 10px;
     font-family: 'Indie flower';
+    color: #FEE1BB;
 }
 
-.text-section04 p,
-.image-section p {
-    font-size: 18px;
-    font-family: 'Lato';
+.pitch-text1 {
+    position: absolute;
+    left: 22%;
+    top: 56%;
+    font-size: 1rem;
+    font-family: 'lato';
     font-weight: 200;
+    padding-right: 14%;
 }
 
-.text-section04 ul {
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-family: 'Lato';
-    font-weight: 200;
+.pitch_list {
+    position: absolute;
+    left: 18%;
+    top: 93%;
+    font-size: 1rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
 }
 
-.image-section img {
-    max-width: 100%;
-    margin-bottom: 10px;
-    border-radius: 8px;
+.link_site_pitch {
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: absolute;
+    top: 824px;
+    left: 21%;
+}
+
+.pitch-div2 {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 518px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
 }
+
+.title_pitch_2 {
+    position: absolute;
+    left: 40%;
+    top: 124%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+/* Slideshow container */
+.slideshow-container_pitch {
+    max-width: 290px;
+    position: absolute;
+    margin: auto;
+    left: 18%;
+    top: 981px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+#prev_pitch,
+#next_pitch {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    color: #4B1A04;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right and prev to the left */
+#prev_pitch {
+    left: -20px;
+    border-radius: 8px;
+}
+
+#next_pitch {
+    right: -20px;
+    border-radius: 8px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.pitch-div3 {
+    width: 1%;
+    color: #FEE1BB;
+    background-color: #CC5819;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #180901;
+    height: 12%;
+    padding-bottom: 338px;
+    position: relative;
+    left: 13%;
+    top: 1.5%;
+    padding-left: 335px;
+    margin-top: 25px;
+    margin-bottom: 115px;
+}
+
+.title_pitch3 {
+    position: absolute;
+    left: 35%;
+    top: 198%;
+    font-size: 2rem;
+    font-family: 'Indie flower';
+    color: #FEE1BB;
+}
+
+.pitch-text3 {
+    position: absolute;
+    left: 21%;
+    top: 208%;
+    font-size: 1rem;
+    font-family: 'lato';
+    font-weight: 200;
+    padding-right: 20%;
+}
+
+/* ANIMATION */
 
 .text-section05,
 .image-section {
@@ -2226,6 +2441,10 @@ img {
         font-size: 2rem;
     }
 
+    .link_site_ssp:hover {
+        background-color: #9C2E0E;
+    }
+
     .ssp-div2 {
         top: 667px;
         left: 2%;
@@ -2268,28 +2487,169 @@ img {
         padding-right: 3%;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* EMNESITE */
     .track_02 {
-        margin-top: 45%;
         margin-bottom: -43%;
     }
 
-    .track_03 {
-        margin-top: 45%;
-        margin-bottom: -45%;
+    .emne-div {
+        top: 667px;
+        left: 2%;
+        width: 39%;
     }
+
+    .title_emne {
+        left: 4%;
+        bottom: -59%;
+    }
+
+    .emne-text1 {
+        left: 4%;
+        top: 153%;
+        padding-right: 62%;
+    }
+
+    .link_site_emne {
+        top: 145px;
+        left: -1%;
+        font-size: 2rem;
+    }
+
+    .link_site_emne:hover {
+        background-color: #9C2E0E;
+    }
+
+    .emne-div2 {
+        top: 667px;
+        left: 2%;
+        width: 39%;
+    }
+
+    .title_emne_2 {
+        left: 5%;
+        top: 192%;
+    }
+
+    /* Slideshow container */
+    .slideshow-container_emne {
+        max-width: 306px;
+        left: 11%;
+        top: 1648px;
+    }
+
+    #prev_emne,
+    #next_emne {
+        color: #FEE1BB;
+    }
+
+    .emne-div3 {
+        top: -54px;
+        left: 59%;
+        width: 39%;
+        margin-bottom: 41%;
+    }
+
+    .title_emne3 {
+        left: 61%;
+        top: 147%;
+    }
+
+
+    .emne-text3 {
+        left: 61%;
+        top: 156%;
+        padding-right: 3%;
+    }
+
+    /* Pitch */
+    .track_03 {
+        margin-bottom: -43%;
+    }
+
+    .pitch-div {
+        top: 667px;
+        left: 2%;
+        width: 39%;
+        padding-bottom: 450px;
+    }
+
+    .title_pitch {
+        left: 4%;
+        bottom: -59%;
+    }
+
+    .pitch-text1 {
+        left: 4%;
+        top: 153%;
+        padding-right: 62%;
+    }
+
+    .pitch_list {
+        position: absolute;
+        left: 2%;
+        top: 175%;
+    }
+
+    .link_site_pitch {
+        top: 1572px;
+        left: 3%;
+        font-size: 2rem;
+    }
+
+    .link_site_pitch:hover {
+        background-color: #9C2E0E;
+    }
+
+    .pitch-div2 {
+        top: 667px;
+        left: 2%;
+        width: 39%;
+    }
+
+    .title_pitch_2 {
+        left: 5%;
+        top: 205%;
+    }
+
+    /* Slideshow container */
+    .slideshow-container_pitch {
+        max-width: 306px;
+        left: 11%;
+        top: 1746px;
+    }
+
+    #prev_pitch,
+    #next_pitch {
+        color: #FEE1BB;
+    }
+
+    .pitch-div3 {
+        top: -354px;
+        left: 59%;
+        width: 39%;
+        margin-bottom: 41%;
+    }
+
+    .title_pitch3 {
+        left: 61%;
+        top: 147%;
+    }
+
+
+    .pitch-text3 {
+        left: 61%;
+        top: 156%;
+        padding-right: 3%;
+    }
+
+    /* ANIMATION */
+
+
+
+
+
+
+
 
     .track_04 {
         margin-top: 39%;
