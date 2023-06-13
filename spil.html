@@ -79,36 +79,29 @@
         <h2 class="title_spil_2">Galleri</h2>
 
         <div class="slideshow-container_spil">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/animation/skitse1.png" alt="Process 1">
-                <div class="text">Første udkast af min spilleskærm</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/animation/Moodboard.png" alt="Process 2">
-                <div class="text">Moodboard</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/animation/gammel_ny.png" alt="Process 3">
-                <div class="text">Gammelt til nyt design</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/animation/Artboard 97.svg" alt="Process 4">
-                <div class="text">Karakter-design udvikling</div>
             </div>
 
-            <!-- Next and previous buttons -->
-            <a id="prev_spil" onclick="plusSlides(-1)">&#10094;</a>
-            <a id="next_spil" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slider-btn prev-btn" onclick="navigateSlider(-1)">&#10094;</div>
+            <div class="slider-btn next-btn" onclick="navigateSlider(1)">&#10095;</div>
 
             <br>
 
             <!-- The dots/circles -->
-            <div>
+            <div class="dots-container">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>

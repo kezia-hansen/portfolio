@@ -77,26 +77,21 @@
         <h2 class="title_video_2">Galleri</h2>
 
         <div class="slideshow-container_video">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <img src="img/videoF.png" alt="Process 1">
-                <div class="text">Forside</div>
+            <div class="slide fade">
+                <img src="img/video_f.png" alt="Process 1">
             </div>
 
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/video_grid.png" alt="Process 2">
-                <div class="text">Grid - galleri</div>
             </div>
 
-            <!-- Next and previous buttons -->
-            <a id="prev_ssp" onclick="plusSlides(-1)">&#10094;</a>
-            <a id="next_ssp" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slider-btn prev-btn" onclick="navigateSlider(-1)">&#10094;</div>
+            <div class="slider-btn next-btn" onclick="navigateSlider(1)">&#10095;</div>
 
             <br>
 
             <!-- The dots/circles -->
-            <div>
+            <div class="dots-container">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
             </div>
