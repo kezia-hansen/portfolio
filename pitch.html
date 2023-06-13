@@ -19,7 +19,6 @@
 <body>
     <header>
         <div class="logo">
-
             <a href="index.html"><img src="/img/logo.svg" class="logo" alt="Logo"></a>
         </div>
         <nav>
@@ -90,36 +89,29 @@
         <h2 class="title_pitch_2">Galleri</h2>
 
         <div class="slideshow-container_pitch">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/pitch_skitser/crazy8s.png" alt="1">
-                <div class="text">Crazy 8's</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/pitch_skitser/Solution sketch.png" alt="2">
-                <div class="text">Solution sketch</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/pitch_skitser/heat_map.png" alt="3">
-                <div class="text">Heat map featuring klassen</div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="slide fade">
                 <img src="img/pitch_skitser/Speed Critique.png" alt="4">
-                <div class="text">Speed Critique</div>
             </div>
 
-            <!-- Next and previous buttons -->
-            <a id="prev_ssp" onclick="plusSlides(-1)">&#10094;</a>
-            <a id="next_ssp" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slider-btn prev-btn" onclick="navigateSlider(-1)">&#10094;</div>
+            <div class="slider-btn next-btn" onclick="navigateSlider(1)">&#10095;</div>
 
             <br>
 
             <!-- The dots/circles -->
-            <div>
+            <div class="dots-container">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
@@ -129,10 +121,13 @@
 
         <h2 class="title_pitch3">My proces</h2>
         <p class="pitch-text3">
-            Vi modtog en guide, som viste HTML opsætningen samt tekst-indholdet, så alle havde samme grundstruktur dog
+            Vi modtog en guide, som viste HTML opsætningen samt tekst-indholdet, så alle havde samme grundstruktur
+            dog
             var design-delen op til den enkelte. Jeg gik med et lilla/lyserød koncept med en blomst som logo (og den
-            førte tilbage til forsiden). Derudover skulle sitet både være responsiv i både mobil og desktop. Vi skulle
-            også lave et grid, hvor jeg valgte at frame billederne i en lyserød ramme for at passe bedre til konceptet.
+            førte tilbage til forsiden). Derudover skulle sitet både være responsiv i både mobil og desktop. Vi
+            skulle
+            også lave et grid, hvor jeg valgte at frame billederne i en lyserød ramme for at passe bedre til
+            konceptet.
         </p>
 
     </main>

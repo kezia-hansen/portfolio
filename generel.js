@@ -31,7 +31,26 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
-/********************* pop-up til om Alive ************************* */
+/********************* Galleri ************************* */
+
+var slides = document.querySelectorAll(".slide");
+var dots = document.querySelectorAll(".dot");
+var currentSlide = 0;
+
+slides[currentSlide].style.display = "block";
+dots[currentSlide].classList.add("active");
+
+function showSlide(n) {
+  slides[currentSlide].style.display = "none";
+  dots[currentSlide].classList.remove("active");
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].style.display = "block";
+  dots[currentSlide].classList.add("active");
+}
+
+function navigateSlider(n) {
+  showSlide(currentSlide + n);
+}
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -44,24 +63,4 @@ function plusSlides(n) {
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 }
