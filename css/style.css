@@ -1669,7 +1669,6 @@ img {
     right: 20px;
 }
 
-/* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -1685,7 +1684,13 @@ img {
     }
 }
 
-/* Styling for the stempel image */
+.ul_krea {
+    font-family: 'Lato';
+    font-weight: 200;
+    color: #FEE1BB;
+}
+
+/* Styling til stempel  */
 #stempel {
     width: 22%;
     height: auto;
@@ -1741,10 +1746,9 @@ img {
         height: auto;
     }
 
-    /* On hover, add a black background color with a little bit see-through */
-    #prev:hover,
-    #next:hover {
-        background-color: #CC5819;
+    .ul_krea {
+        position: relative;
+        right: 36%;
     }
 
     #stempel {
