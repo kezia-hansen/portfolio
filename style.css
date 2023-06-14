@@ -2725,6 +2725,20 @@ img {
     left: -1%;
 }
 
+.link_site_virk2 {
+    padding: 5px 35px;
+    background-color: transparent;
+    color: #FEE1BB;
+    border-radius: 30px;
+    border: #FEE1BB solid 2px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Indie Flower';
+    position: absolute;
+    top: 178px;
+    left: -1%;
+}
+
 .virk-div2 {
     width: 1%;
     color: #FEE1BB;
@@ -3240,6 +3254,16 @@ img {
 
     .link_site_virk {
         top: 169px;
+        left: 0%;
+        font-size: 2rem;
+    }
+
+    .link_site_virk2:hover {
+        background-color: #9C2E0E;
+    }
+
+    .link_site_virk2 {
+        top: 102px;
         left: 0%;
         font-size: 2rem;
     }
